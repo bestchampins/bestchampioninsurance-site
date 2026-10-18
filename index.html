@@ -391,6 +391,139 @@
   .form-status strong{display:block; font-family:'Playfair Display', Georgia, serif; font-size:17px; margin-bottom:4px;}
   .form-status a{text-decoration:underline;}
 
+  /* ---------- QUOTE (Falcones-style) ---------- */
+  #quote{scroll-margin-top:72px;}
+  .quote-banner{
+    background:linear-gradient(115deg, var(--deep-2) 0%, var(--deep) 45%, var(--brand-dark) 100%);
+    color:var(--paper); padding:64px 0 60px; position:relative; overflow:hidden;
+  }
+  .quote-banner::after{
+    content:""; position:absolute; right:-120px; top:-120px; width:420px; height:420px; border-radius:50%;
+    border:1px solid rgba(176,138,62,0.35); pointer-events:none;
+  }
+  .quote-banner .kicker{font-size:13px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:var(--gold); margin-bottom:12px;}
+  .quote-banner h2{font-size:clamp(34px,5vw,54px); color:var(--paper); max-width:20ch;}
+  .quote-banner p{font-size:18px; color:#CFE3CC; margin:14px 0 0; max-width:52ch;}
+  .quote-body{padding-top:64px; padding-bottom:96px;}
+  .quote-grid{display:grid; grid-template-columns:minmax(0,1.65fr) minmax(0,1fr); gap:56px; align-items:start;}
+  .qf h3{font-size:28px; color:var(--deep-2); margin-bottom:8px;}
+  .qf .qf-sub{font-size:15px; color:#4B5F52; margin:0 0 26px;}
+  .qf-row{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+  .qf-field{position:relative; margin-bottom:16px;}
+  .qf-field .ctl{
+    display:block; width:100%; height:58px; margin:0;
+    padding:24px 16px 8px; border:0; border-radius:4px;
+    background:#ECEAE3; color:var(--ink);
+    font-family:'Source Serif 4', Georgia, serif; font-size:16px; line-height:1.4;
+    box-shadow:inset 0 -2px 0 transparent; transition:box-shadow .18s ease, background .18s ease;
+    -webkit-appearance:none; appearance:none;
+  }
+  .qf-field textarea.ctl{height:auto; min-height:132px; padding-top:30px; resize:vertical;}
+  .qf-field select.ctl{
+    padding-right:44px; cursor:pointer;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%231F3B2C' stroke-width='2'/%3E%3C/svg%3E");
+    background-repeat:no-repeat; background-position:right 18px center;
+  }
+  .qf-field select.ctl:invalid{color:#6B7B70;}
+  .qf-field select.ctl option{color:var(--ink);}
+  .qf-field .ctl:hover{background-color:#E6E3DA;}
+  .qf-field .ctl:focus{outline:none; background-color:#E8E5DD; box-shadow:inset 0 -3px 0 var(--brand);}
+  .qf-field .ctl:focus-visible{outline:none;}
+  .qf-field label{
+    position:absolute; left:16px; top:18px; right:16px;
+    font-size:16px; color:#56685C; pointer-events:none;
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+    transform-origin:left top; transition:transform .16s ease, color .16s ease, top .16s ease;
+  }
+  .qf-field textarea.ctl + label{top:18px;}
+  .qf-field .ctl:focus + label,
+  .qf-field .ctl:not(:placeholder-shown) + label,
+  .qf-field select.ctl + label{top:8px; transform:scale(0.78); color:var(--brand-dark); font-weight:600;}
+  .qf-field select.ctl + label{color:#56685C;}
+  .qf-field select.ctl:focus + label{color:var(--brand-dark);}
+  .qf-field .ctl::placeholder{color:transparent;}
+  .qf .req{color:#A33A2B; margin-left:2px;}
+  .qf-note{
+    margin:-16px 0 16px; padding:9px 16px; font-size:13.5px; font-style:italic; color:#56685C;
+    background:#F4F2EC; border-radius:0 0 4px 4px;
+  }
+  .qf-field .err{display:none; color:#9B2C2C; font-size:13px; margin-top:6px;}
+  .qf-field.invalid .err{display:block;}
+  .qf-field.invalid .ctl{box-shadow:inset 0 -3px 0 #9B2C2C; background-color:#F3E6E2;}
+  .qf-honey{position:absolute !important; left:-10000px !important; width:1px; height:1px; overflow:hidden;}
+  .qf-submit{
+    display:inline-flex; align-items:center; justify-content:center; gap:10px;
+    margin-top:10px; padding:16px 34px; min-width:170px;
+    border:0; border-radius:4px; cursor:pointer;
+    background:var(--brand-dark); color:#fff;
+    font-family:'Source Serif 4', Georgia, serif; font-weight:600; font-size:17px; letter-spacing:0.01em;
+    transition:background .15s ease, transform .15s ease;
+  }
+  .qf-submit:hover{background:var(--deep); transform:translateY(-1px);}
+  .qf-submit[disabled]{opacity:0.7; cursor:progress; transform:none;}
+  .qf-legal{font-size:13px; color:#6B7B70; margin:16px 0 0;}
+  .qf-error{
+    display:none; margin-top:18px; padding:14px 16px; border-left:4px solid #9B2C2C;
+    background:#F6E9E5; color:#5A1E1A; font-size:15px;
+  }
+  .qf-error.show{display:block;}
+  .qf-error a{text-decoration:underline; font-weight:600;}
+  .qf-thanks{
+    padding:44px 40px; background:var(--panel); border-top:4px solid var(--brand);
+    border-radius:4px;
+  }
+  .qf-thanks .check{
+    width:52px; height:52px; border-radius:50%; background:var(--brand-dark); color:#fff;
+    display:flex; align-items:center; justify-content:center; margin-bottom:18px;
+  }
+  .qf-thanks h3{font-size:30px; color:var(--deep-2); margin-bottom:10px;}
+  .qf-thanks p{color:#3E5347; margin:0 0 10px; font-size:16.5px;}
+  .qf-thanks a{color:var(--brand-dark); text-decoration:underline; font-weight:600;}
+  .how-card{
+    background:var(--panel); border:1px solid var(--line); border-top:4px solid var(--gold);
+    padding:34px 32px; border-radius:4px;
+  }
+  .how-card h3{font-size:26px; color:var(--deep-2); margin-bottom:22px;}
+  .how-steps{counter-reset:step; display:flex; flex-direction:column; gap:18px; margin:0 0 30px; padding:0; list-style:none;}
+  .how-steps li{display:flex; gap:16px; align-items:flex-start; font-size:16.5px; color:var(--ink); line-height:1.45;}
+  .how-steps li::before{
+    counter-increment:step; content:counter(step);
+    flex:none; width:38px; height:38px; border-radius:50%;
+    background:var(--brand-dark); color:#fff; font-family:'Playfair Display', Georgia, serif; font-weight:700; font-size:17px;
+    display:flex; align-items:center; justify-content:center; margin-top:-6px;
+  }
+  .how-contact{border-top:1px solid var(--gold); padding-top:22px;}
+  .how-contact h4{font-family:'Playfair Display', Georgia, serif; font-size:20px; color:var(--deep-2); margin:0 0 6px;}
+  .how-contact p{margin:0 0 12px; font-size:15px; color:#4B5F52;}
+  .how-contact a{display:flex; align-items:center; gap:10px; font-weight:600; color:var(--brand-dark); font-size:16px; padding:5px 0; overflow-wrap:anywhere;}
+  .how-contact a:hover{color:var(--deep-2); text-decoration:underline;}
+  .how-contact svg{flex:none; width:18px; height:18px;}
+  .tab-quote-cta{
+    margin-top:40px; padding:24px 28px; display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap;
+    background:var(--panel); border:1px solid var(--gold);
+  }
+  .tab-quote-cta p{margin:0; font-size:16px; color:#3E5347; max-width:56ch;}
+  .tab-quote-cta strong{color:var(--deep-2); font-family:'Playfair Display', Georgia, serif; font-size:18px; margin-right:4px;}
+  .tab-quote-cta.dark{background:rgba(244,249,240,0.06); border-color:rgba(176,138,62,0.6);}
+  .tab-quote-cta.dark p{color:#CFE3CC;}
+  .tab-quote-cta.dark strong{color:var(--paper);}
+  .tab-quote-cta.dark .btn{background:var(--paper); color:var(--deep-2); border-color:var(--paper);}
+  .tab-quote-cta.dark .btn:hover{background:transparent; color:var(--paper);}
+  @media(max-width:960px){
+    .quote-grid{grid-template-columns:1fr; gap:40px;}
+  }
+  @media(max-width:600px){
+    .quote-banner{padding:44px 0 40px;}
+    .quote-banner p{font-size:16.5px;}
+    .quote-body{padding-top:40px; padding-bottom:64px;}
+    .qf-row{grid-template-columns:1fr; gap:0;}
+    .qf-submit{width:100%;}
+    .how-card{padding:28px 22px;}
+    .qf-thanks{padding:32px 22px;}
+    .tab-quote-cta{padding:20px;}
+    .tab-quote-cta .btn{width:100%;}
+  }
+
   @media (prefers-reduced-motion: reduce){
     html{scroll-behavior:auto;}
     *{transition:none !important; animation:none !important;}
@@ -414,7 +547,7 @@
     </nav>
     <div class="nav-right">
       <a class="phone-link" href="tel:+12122336888">212.233.6888</a>
-      <a class="btn" href="#contact">Get a Quote</a>
+      <a class="btn" href="#quote">Get a Quote</a>
       <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span></span></button>
     </div>
   </div>
@@ -429,7 +562,7 @@
       <h1>Someone in your corner<br>when it counts.</h1>
       <p class="lede">Best Champion Insurance Brokerage shops the market on your behalf across New York, New Jersey, Connecticut, and Pennsylvania — so the policy you land on actually fits your life, not just a carrier's quota.</p>
       <div class="ctas">
-        <a class="btn" href="#contact">Request a Quote</a>
+        <a class="btn" href="#quote">Request a Quote</a>
         <a class="btn ghost" href="#coverage">See Coverage</a>
       </div>
       <div class="stat-row">
@@ -573,32 +706,10 @@
           </div>
         </div>
 
-        <form class="quote-form" data-quote-type="Personal" novalidate style="margin-top:36px;">
-          <h3>Request a Personal Quote</h3>
-          <p class="sub">Tell us what you're looking to cover and a broker will follow up with options.</p>
-          <div class="field">
-            <label for="per-name">Name <span class="req" aria-hidden="true">*</span></label>
-            <input id="per-name" type="text" name="name" autocomplete="name" required aria-describedby="per-name-err">
-            <div class="err" id="per-name-err">Please enter your name.</div>
-          </div>
-          <div class="field">
-            <label for="per-email">Email <span class="req" aria-hidden="true">*</span></label>
-            <input id="per-email" type="email" name="email" autocomplete="email" required aria-describedby="per-email-err">
-            <div class="err" id="per-email-err">Please enter a valid email address.</div>
-          </div>
-          <div class="field">
-            <label for="per-phone">Phone Number <span class="req" aria-hidden="true">*</span></label>
-            <input id="per-phone" type="tel" name="phone" autocomplete="tel" required aria-describedby="per-phone-err">
-            <div class="err" id="per-phone-err">Please enter a phone number we can reach you at.</div>
-          </div>
-          <div class="field">
-            <label for="per-needs">Describe Your Insurance Needs</label>
-            <textarea id="per-needs" name="needs"></textarea>
-          </div>
-          <button class="btn" type="submit">Get a Quote</button>
-          <p class="note">Or call us directly at <a href="tel:+12122336888">212.233.6888</a>.</p>
-          <div class="form-status" role="status" aria-live="polite"></div>
-        </form>
+        <div class="tab-quote-cta">
+          <p><strong>Ready for a personal quote?</strong> Tell us what you need and a broker will follow up with options.</p>
+          <a class="btn" href="#quote" data-quote-prefill="personal">Get a Personal Quote</a>
+        </div>
       </div>
 
       <div class="tab-panel dark" data-panel="business" role="tabpanel" aria-labelledby="tab-business" hidden>
@@ -699,36 +810,111 @@
           </div>
         </div>
 
-        <form class="quote-form" data-quote-type="Business" novalidate style="margin-top:36px;">
-          <h3>Request a Business Quote</h3>
-          <p class="sub">Tell us about your company and a broker will follow up with options.</p>
-          <div class="field">
-            <label for="biz-name">Name <span class="req" aria-hidden="true">*</span></label>
-            <input id="biz-name" type="text" name="name" autocomplete="name" required aria-describedby="biz-name-err">
-            <div class="err" id="biz-name-err">Please enter your name.</div>
-          </div>
-          <div class="field">
-            <label for="biz-email">Email <span class="req" aria-hidden="true">*</span></label>
-            <input id="biz-email" type="email" name="email" autocomplete="email" required aria-describedby="biz-email-err">
-            <div class="err" id="biz-email-err">Please enter a valid email address.</div>
-          </div>
-          <div class="field">
-            <label for="biz-phone">Phone Number <span class="req" aria-hidden="true">*</span></label>
-            <input id="biz-phone" type="tel" name="phone" autocomplete="tel" required aria-describedby="biz-phone-err">
-            <div class="err" id="biz-phone-err">Please enter a phone number we can reach you at.</div>
-          </div>
-          <div class="field">
-            <label for="biz-needs">Describe Your Business Needs</label>
-            <textarea id="biz-needs" name="needs"></textarea>
-          </div>
-          <button class="btn" type="submit">Get a Quote</button>
-          <p class="note" style="color:#9DB6A5;">Or call us directly at <a href="tel:+12122336888" style="color:var(--brand);">212.233.6888</a>.</p>
-          <div class="form-status" role="status" aria-live="polite"></div>
-        </form>
+        <div class="tab-quote-cta dark">
+          <p><strong>Ready for a business quote?</strong> Tell us what you need and a broker will follow up with options.</p>
+          <a class="btn" href="#quote" data-quote-prefill="business">Get a Business Quote</a>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- GET A QUOTE -->
+  <section id="quote" aria-labelledby="quote-title">
+    <div class="quote-banner">
+      <div class="wrap">
+        <div class="kicker">Free &middot; No obligation</div>
+        <h2 id="quote-title">Get a Free Insurance Quote</h2>
+        <p>Complete our form and we'll get back to you with your insurance quote.</p>
+      </div>
+    </div>
+    <div class="wrap quote-body">
+      <div class="quote-grid">
+        <div class="qf" id="quote-form-wrap">
+          <form id="quote-form" class="qf-form" novalidate>
+            <h3>Insurance Quote Request</h3>
+            <p class="qf-sub">Fields marked with <span class="req">*</span> are required.</p>
+            <div class="qf-row">
+            <div class="qf-field">
+              <input class="ctl" id="q-first" name="first_name" type="text" autocomplete="given-name" placeholder=" " required aria-describedby="q-first-err">
+              <label for="q-first">First Name<span class="req" aria-hidden="true">*</span></label>
+              <div class="err" id="q-first-err">Please enter your first name.</div>
+            </div>
+            <div class="qf-field">
+              <input class="ctl" id="q-last" name="last_name" type="text" autocomplete="family-name" placeholder=" " required aria-describedby="q-last-err">
+              <label for="q-last">Last Name<span class="req" aria-hidden="true">*</span></label>
+              <div class="err" id="q-last-err">Please enter your last name.</div>
+            </div>
+            </div>
+            <div class="qf-row">
+            <div class="qf-field">
+              <input class="ctl" id="q-email" name="email" type="email" autocomplete="email" placeholder=" " required aria-describedby="q-email-err">
+              <label for="q-email">Email<span class="req" aria-hidden="true">*</span></label>
+              <div class="err" id="q-email-err">Please enter a valid email address.</div>
+            </div>
+            <div class="qf-field">
+              <input class="ctl" id="q-phone" name="phone" type="tel" autocomplete="tel" placeholder=" " required aria-describedby="q-phone-err">
+              <label for="q-phone">Phone Number<span class="req" aria-hidden="true">*</span></label>
+              <div class="err" id="q-phone-err">Please enter a phone number we can reach you at.</div>
+            </div>
+            </div>
+            <div class="qf-field">
+              <select class="ctl" id="q-type" name="insurance_type" required aria-describedby="q-type-err">
+                <option value="" selected disabled>Select one&hellip;</option>
+                <optgroup label="Personal" data-group="personal">
+                  <option>Personal - Auto</option>
+                  <option>Personal - Home</option>
+                  <option>Personal - Renters</option>
+                  <option>Personal - Life</option>
+                  <option>Personal - Other personal</option>
+                </optgroup>
+                <optgroup label="Business" data-group="business">
+                  <option>Business - General liability</option>
+                  <option>Business - Commercial auto</option>
+                  <option>Business - Workers' comp</option>
+                  <option>Business - Property</option>
+                  <option>Business - Other business</option>
+                </optgroup>
+              </select>
+              <label for="q-type">Type of insurance<span class="req" aria-hidden="true">*</span></label>
+              <div class="err" id="q-type-err">Please choose the type of insurance you need.</div>
+            </div>
+            <div class="qf-field">
+              <textarea class="ctl" id="q-msg" name="message" rows="4" placeholder=" " aria-describedby="q-msg-note"></textarea>
+              <label for="q-msg">How can we help?</label>
+            </div>
+            <p class="qf-note" id="q-msg-note">Please do not include sensitive, private information in this area.</p>
+            <div class="qf-honey" aria-hidden="true">
+              <label for="q-honey">Leave this field empty</label>
+              <input type="text" id="q-honey" name="_honey" tabindex="-1" autocomplete="off">
+            </div>
+            <button class="qf-submit" type="submit">Submit</button>
+            <p class="qf-legal">A licensed broker will reply within one business day. Prefer to talk? Call <a href="tel:+12122336888">212.233.6888</a>.</p>
+            <div class="qf-error" role="alert"></div>
+          </form>
+          <div class="qf-thanks" id="quote-thanks" tabindex="-1" hidden>
+            <div class="check" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+            <h3>Thank you<span class="qf-thanks-name"></span>!</h3>
+            <p>We've received your quote request. A Best Champion broker will review it and get back to you within one business day.</p>
+            <p>Need us sooner? Call <a href="tel:+12122336888">212.233.6888</a> or email <a href="mailto:info@bestchampioninsurance.com">info@bestchampioninsurance.com</a>.</p>
+          </div>
+        </div>
+        <aside class="how-card" aria-labelledby="how-title">
+          <h3 id="how-title">How It Works</h3>
+          <ol class="how-steps">
+            <li>Fill out the form, we'll be in touch.</li>
+            <li>Go over your options with an agent.</li>
+            <li>Get the coverage you need.</li>
+          </ol>
+          <div class="how-contact">
+            <h4>Contact Us</h4>
+            <p>Questions before you start? Reach a broker directly.</p>
+            <a href="tel:+12122336888"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>212.233.6888</a>
+            <a href="mailto:info@bestchampioninsurance.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>info@bestchampioninsurance.com</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
 
 
   <!-- WHY US -->
@@ -834,7 +1020,7 @@
     <div class="wrap">
       <h2>Ready to see what you're actually paying for?</h2>
       <div class="actions">
-        <a class="btn" href="mailto:info@bestchampioninsurance.com">Request a Quote</a>
+        <a class="btn" href="#quote">Request a Quote</a>
         <span class="call">or call <a href="tel:+12122336888">212.233.6888</a></span>
       </div>
     </div>
@@ -857,6 +1043,7 @@
         <ul>
           <li><a href="#coverage" data-tab-link="personal">Personal</a></li>
           <li><a href="#coverage" data-tab-link="business">Business</a></li>
+          <li><a href="#quote">Get a Quote</a></li>
         </ul>
       </div>
       <div class="foot-col">
@@ -887,7 +1074,7 @@
 <script>
 (function(){
   var TO = 'info@bestchampioninsurance.com';
-  var PHONE = '212.233.6888';
+  var ENDPOINT = 'https://formsubmit.co/ajax/' + TO;
 
   /* Coverage tabs */
   function activateTab(name){
@@ -926,75 +1113,110 @@
     document.addEventListener('keydown', function(e){ if(e.key === 'Escape') setMenu(false); });
   }
 
-  /* Quote forms -> mailto */
+  /* Quote form -> FormSubmit (AJAX) */
+  var form = document.getElementById('quote-form');
+  var thanks = document.getElementById('quote-thanks');
+  if(!form) return;
+  var sel = form.elements['insurance_type'];
+  var placeholderOpt = sel.querySelector('option[value=""]');
   var emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  function val(form, n){ var el = form.elements[n]; return el ? el.value.trim() : ''; }
-  function mark(form, n, ok){
-    var el = form.elements[n]; if(!el) return;
-    var f = el.closest('.field');
-    if(f) f.classList.toggle('invalid', !ok);
+  var RULES = {
+    first_name: function(v){ return v.length > 0; },
+    last_name:  function(v){ return v.length > 0; },
+    email:      function(v){ return emailRe.test(v); },
+    phone:      function(v){ return v.replace(/\D/g,'').length >= 7; },
+    insurance_type: function(v){ return v.length > 0; }
+  };
+  var ORDER = ['first_name','last_name','email','phone','insurance_type'];
+  function val(n){ var el = form.elements[n]; return el ? String(el.value || '').trim() : ''; }
+  function mark(n, ok){
+    var el = form.elements[n]; var f = el.closest('.qf-field');
+    f.classList.toggle('invalid', !ok);
     el.setAttribute('aria-invalid', ok ? 'false' : 'true');
   }
-  function fieldOk(n, v){
-    if(n === 'name') return v.length > 0;
-    if(n === 'email') return emailRe.test(v);
-    if(n === 'phone') return v.replace(/\D/g,'').length >= 7;
-    return true;
-  }
-  function validate(form){
-    var okName = fieldOk('name', val(form,'name'));
-    var okEmail = fieldOk('email', val(form,'email'));
-    var okPhone = fieldOk('phone', val(form,'phone'));
-    mark(form,'name',okName); mark(form,'email',okEmail); mark(form,'phone',okPhone);
-    var first = !okName ? 'name' : !okEmail ? 'email' : !okPhone ? 'phone' : null;
+  function validate(){
+    var first = null;
+    ORDER.forEach(function(n){ var ok = RULES[n](val(n)); mark(n, ok); if(!ok && !first) first = n; });
     if(first) form.elements[first].focus();
     return !first;
   }
-  function buildMailto(form){
-    var type = form.getAttribute('data-quote-type') || 'General';
-    var name = val(form,'name');
-    var subject = 'Quote request (' + type + ') - ' + name;
-    var body = [
-      'New ' + type.toLowerCase() + ' insurance quote request from bestchampioninsurance.com',
-      '',
-      'Name: ' + name,
-      'Email: ' + val(form,'email'),
-      'Phone: ' + val(form,'phone'),
-      '',
-      (type === 'Business' ? 'Business needs:' : 'Insurance needs:'),
-      val(form,'needs') || '(not provided)'
-    ].join('\n').replace(/\r?\n/g, '\r\n');
-    return 'mailto:' + TO + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-  }
-  document.querySelectorAll('form.quote-form').forEach(function(form){
-    ['name','email','phone'].forEach(function(n){
-      var el = form.elements[n];
-      if(el) el.addEventListener('input', function(){
-        var f = el.closest('.field');
-        if(f && f.classList.contains('invalid')) mark(form, n, fieldOk(n, el.value.trim()));
+  ORDER.forEach(function(n){
+    var el = form.elements[n];
+    ['input','change'].forEach(function(ev){
+      el.addEventListener(ev, function(){
+        if(el.closest('.qf-field').classList.contains('invalid')) mark(n, RULES[n](val(n)));
       });
     });
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-      var status = form.querySelector('.form-status');
-      if(!validate(form)){ if(status) status.classList.remove('show'); return; }
-      var href = buildMailto(form);
-      form.setAttribute('data-last-mailto', href);
-      if(status){
-        status.innerHTML = '<strong>Thank you, ' + escapeHtml(val(form,'name')) + '!</strong>' +
-          'Your email app should open with your quote request ready to send &mdash; just press Send. ' +
-          'If it didn\'t open, call us at <a href="tel:+12122336888">' + PHONE + '</a> or email ' +
-          '<a href="mailto:' + TO + '">' + TO + '</a>.';
-        status.classList.add('show');
-      }
-      window.location.href = href;
-    });
   });
-  function escapeHtml(t){
-    return t.replace(/[&<>"']/g, function(c){
-      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
-    });
+
+  /* Links that preselect a coverage group (Personal / Business) */
+  function prefill(group){
+    var grp = sel.querySelector('optgroup[data-group="' + group + '"]');
+    if(!grp) return;
+    sel.insertBefore(grp, placeholderOpt.nextSibling);           // matching group listed first
+    var cur = sel.selectedOptions[0];
+    if(!cur || !cur.value || cur.parentNode !== grp){
+      sel.value = '';
+      placeholderOpt.textContent = 'Select a ' + group + ' coverage\u2026';
+    }
+    form.setAttribute('data-prefill', group);
   }
+  document.querySelectorAll('[data-quote-prefill]').forEach(function(a){
+    a.addEventListener('click', function(){ prefill(a.getAttribute('data-quote-prefill')); });
+  });
+
+  function esc(t){ return t.replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+  var errBox = form.querySelector('.qf-error');
+  var btn = form.querySelector('.qf-submit');
+  function showError(){
+    errBox.innerHTML = '<strong>Sorry, we couldn\u2019t send your request.</strong> Please try again, or reach us directly at ' +
+      '<a href="tel:+12122336888">212.233.6888</a> or <a href="mailto:' + TO + '">' + TO + '</a>.';
+    errBox.classList.add('show');
+  }
+  function showThanks(){
+    thanks.querySelector('.qf-thanks-name').textContent = val('first_name') ? ', ' + val('first_name') : '';
+    form.hidden = true; thanks.hidden = false;
+    thanks.scrollIntoView({block:'start', behavior:'smooth'});
+    thanks.focus({preventScroll:true});
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    errBox.classList.remove('show');
+    if(!validate()) return;
+    var name = (val('first_name') + ' ' + val('last_name')).trim();
+    var payload = {
+      'First Name': val('first_name'),
+      'Last Name': val('last_name'),
+      'email': val('email'),
+      'Phone': val('phone'),
+      'Insurance Type': val('insurance_type'),
+      'How can we help?': val('message') || '(not provided)',
+      '_subject': 'New quote request - ' + name,
+      '_replyto': val('email'),
+      '_template': 'table',
+      '_captcha': 'false',
+      '_honey': form.elements['_honey'].value
+    };
+    if(/^https?:/.test(location.protocol)) payload._url = location.origin + location.pathname;
+    btn.disabled = true; var label = btn.textContent; btn.textContent = 'Sending\u2026';
+    fetch(ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(payload)
+    })
+    .then(function(r){ return r.json().catch(function(){ return { success: r.ok ? 'true' : 'false' }; }); })
+    .then(function(data){
+      /* FormSubmit returns success as the STRING "true"/"false" (usually HTTP 200 either way).
+         Before the inbox is activated it answers "This form needs Activation..." - those submissions
+         are held by FormSubmit and delivered once the activation link is clicked, so treat as received. */
+      var ok = String(data && data.success) === 'true' || /activat/i.test(String(data && data.message || ''));
+      form.setAttribute('data-last-result', ok ? 'success' : 'error');
+      if(ok) showThanks(); else showError();
+    })
+    .catch(function(){ form.setAttribute('data-last-result','error'); showError(); })
+    .then(function(){ btn.disabled = false; btn.textContent = label; });
+  });
 })();
 </script>
 </body>
