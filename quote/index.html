@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Report a Claim | Best Champion Insurance Brokerage</title>
-<meta name="description" content="Report an insurance claim to Best Champion Insurance Brokerage. We report it to your insurance company and follow up with you. NY, NJ, CT and PA.">
-<link rel="canonical" href="https://bestchampioninsurance.com/report-a-claim/">
+<title>Detailed Quote Request | Best Champion Insurance Brokerage</title>
+<meta name="description" content="Request a detailed insurance quote for commercial property, homeowners, auto, workers comp and more. Independent broker serving NY, NJ, CT and PA since 1998.">
+<link rel="canonical" href="https://bestchampioninsurance.com/quote/">
 <link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon-64.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -613,8 +613,8 @@
     <nav class="links" id="site-nav">
       <a class="navlink" href="/#coverage">Coverage</a>
       <a class="navlink" href="/#why">Agency</a>
-      <a class="navlink" href="/report-a-claim/" aria-current="page">Report a Claim</a>
-      <a class="navlink" href="/quote-request/">Detailed Quote</a>
+      <a class="navlink" href="/claims/">Report a Claim</a>
+      <a class="navlink" href="/quote/" aria-current="page">Detailed Quote</a>
       <a class="navlink" href="/#contact">Contact</a>
       <a class="navlink menu-only" href="tel:+12122336888">Call 212.233.6888</a>
     </nav>
@@ -630,137 +630,134 @@
   <section aria-labelledby="page-title">
     <div class="quote-banner">
       <div class="wrap">
-        <div class="kicker">Claims help &middot; 212.233.6888</div>
-        <h1 id="page-title">Report a Claim</h1>
-        <p>Tell us what happened and we’ll report the claim to your insurance company and follow up with you.</p>
+        <div class="kicker">Free &middot; No obligation</div>
+        <h1 id="page-title">Detailed Quote Request</h1>
+        <p>Tell us what you need covered. A licensed broker will shop several carriers and get back to you, usually within one to two business days.</p>
       </div>
     </div>
     <div class="wrap quote-body">
       <div class="quote-grid">
         <div class="cf">
 <section id="formView">
-<div class="alert" role="note">
-    <b>If anyone is hurt or in danger, call 911 first.</b>Then protect the property from more damage: shut off water or gas, cover openings, and keep receipts for emergency repairs. Don't throw away damaged items or broken parts until the adjuster has seen them.
-  </div>
-<p class="lede">Fill in what you know; we can get the rest later. Fields marked optional can be left blank.</p>
+<p class="lede">Pick everything you’d like quoted and fill in what you know. Fields marked optional can be left blank.</p>
 <form id="qf" novalidate>
-    <fieldset class="sec">
-      <legend><h2><span class="n">01</span>Who is reporting</h2></legend>
+    <fieldset class="sec" data-sec="contact">
+      <legend><h2><span class="n">01</span>Your contact information</h2></legend>
+      <p class="hint">How we should reach you about the quote.</p>
       <div class="grid">
-        <div class="f"><label for="c_name">Your name</label><input type="text" id="c_name" name="Reported by" autocomplete="name" required></div>
-        <div class="f"><label for="c_insured">Insured name on the policy</label><input type="text" id="c_insured" name="Insured name" placeholder="Person or business on the policy"></div>
+        <div class="f"><label for="c_name">Full name</label><input type="text" id="c_name" name="Full name" autocomplete="name" required></div>
+        <div class="f"><label for="c_biz">Business name <span class="opt">(optional)</span></label><input type="text" id="c_biz" name="Business name" autocomplete="organization"></div>
         <div class="f"><label for="c_phone">Phone</label><input type="tel" id="c_phone" name="Phone" autocomplete="tel" inputmode="tel"></div>
         <div class="f"><label for="c_email">Email</label><input type="email" id="c_email" name="Email" autocomplete="email"></div>
-        <div class="f"><label for="c_rel">Your relationship to the insured</label>
-          <select id="c_rel" name="Relationship"><option>I am the insured</option><option>Owner / officer of the business</option><option>Family member</option><option>Property manager / employee</option><option>Other</option></select></div>
         <div class="f"><label for="c_lang">Preferred language</label>
           <select id="c_lang" name="Preferred language"><option>English</option><option>中文 (Chinese, Mandarin)</option><option>廣東話 (Cantonese)</option><option>Español</option><option>Other</option></select></div>
+        <div class="f"><label for="c_best">Best way to reach you</label>
+          <select id="c_best" name="Best way to reach you"><option>Phone call</option><option>Text message</option><option>Email</option><option>WeChat</option></select></div>
         <div class="f full" id="c_reach_err" hidden><span class="errmsg">Enter a phone number or an email address so we can reach you.</span></div>
       </div>
     </fieldset>
 
-    <fieldset class="sec">
-      <legend><h2><span class="n">02</span>Policy</h2></legend>
-      <p class="hint">Find these on your declarations page or ID card. If you don't have them, leave them blank.</p>
-      <div class="grid">
-        <div class="f"><label for="p_co">Insurance company <span class="opt">(optional)</span></label><input type="text" id="p_co" name="Insurance company"></div>
-        <div class="f"><label for="p_no">Policy number <span class="opt">(optional)</span></label><input type="text" id="p_no" name="Policy number"></div>
-      </div>
-    </fieldset>
-
-    <fieldset class="sec">
-      <legend><h2><span class="n">03</span>What kind of claim?</h2></legend>
+    <fieldset class="sec" data-sec="coverage">
+      <legend><h2><span class="n">02</span>What do you want to insure?</h2></legend>
+      <p class="hint">Pick everything you'd like quoted. Each choice opens a short section below.</p>
       <div class="cov-grid" id="covs">
-        <label class="cov"><input type="radio" name="Claim type" value="Property damage" data-show="s_prop"><b>Property damage</b><small>Water, fire, smoke, wind, storm, theft or vandalism at a building</small></label>
-        <label class="cov"><input type="radio" name="Claim type" value="Injury or damage to someone else (liability)" data-show="s_liab"><b>Someone else was hurt or had damage</b><small>A slip and fall, a tenant or customer claim, damage you caused</small></label>
-        <label class="cov"><input type="radio" name="Claim type" value="Auto accident" data-show="s_auto"><b>Auto accident</b><small>Collision, theft or damage to a car or business vehicle</small></label>
-        <label class="cov"><input type="radio" name="Claim type" value="Employee injury (workers comp)" data-show="s_wc"><b>Employee injury</b><small>A worker was hurt or got sick on the job</small></label>
-        <label class="cov"><input type="radio" name="Claim type" value="Other" data-show="s_other"><b>Something else</b><small>Lawsuit papers, a letter from an attorney, or not sure</small></label>
+        <label class="cov"><input type="checkbox" name="Coverage" value="Commercial property & liability" data-show="s_cpl"><b>Commercial property &amp; liability</b><small>Buildings you own or rent out, stores, restaurants, offices</small></label>
+        <label class="cov"><input type="checkbox" name="Coverage" value="Homeowners / dwelling" data-show="s_home"><b>Homeowners / dwelling</b><small>Your home, 1–4 family, condo, co-op, rental house</small></label>
+        <label class="cov"><input type="checkbox" name="Coverage" value="Personal auto" data-show="s_auto"><b>Personal auto</b><small>Cars for you and your family</small></label>
+        <label class="cov"><input type="checkbox" name="Coverage" value="Workers comp & disability (DBL/PFL)" data-show="s_wc"><b>Workers comp &amp; disability</b><small>Required in NY once you have employees, including DBL &amp; PFL</small></label>
+        <label class="cov"><input type="checkbox" name="Coverage" value="Commercial auto" data-show="s_cauto"><b>Commercial auto</b><small>Vans, trucks and cars used for the business</small></label>
+        <label class="cov"><input type="checkbox" name="Coverage" value="Umbrella / other" data-show="s_other"><b>Umbrella &amp; other</b><small>Extra liability, liquor, contractors, bonds and more</small></label>
       </div>
-      <p class="errmsg" id="cov_err" hidden>Choose the kind of claim.</p>
+      <p class="errmsg" id="cov_err" hidden>Choose at least one type of insurance.</p>
     </fieldset>
 
-    <fieldset class="sec">
-      <legend><h2><span class="n">04</span>When and where</h2></legend>
+    <fieldset class="sec" id="s_cpl" hidden>
+      <legend><h2><span class="n">·</span>Commercial property &amp; liability</h2></legend>
       <div class="grid">
-        <div class="f"><label for="l_date">Date it happened</label><input type="date" id="l_date" name="Date of loss" required></div>
-        <div class="f"><label for="l_time">Time <span class="opt">(approximate)</span></label><input type="time" id="l_time" name="Time of loss"></div>
-        <div class="f full"><label for="l_addr">Address or location</label><input type="text" id="l_addr" name="Location of loss" placeholder="Street, city, ZIP, or the intersection for an accident" required></div>
-        <div class="f full"><label for="l_desc">What happened?</label><textarea id="l_desc" name="Description" placeholder="Describe what happened, what was damaged, and how you found out." required style="min-height:120px"></textarea></div>
-      </div>
-    </fieldset>
-
-    <fieldset class="sec" id="s_prop" hidden>
-      <legend><h2><span class="n">·</span>Property damage details</h2></legend>
-      <div class="grid">
-        <div class="f"><label for="pr_cause">Cause</label><select id="pr_cause" name="Property: Cause" data-req><option value="">Choose</option><option>Water leak / burst pipe</option><option>Sewer or drain backup</option><option>Fire or smoke</option><option>Wind, hail or storm</option><option>Theft / burglary</option><option>Vandalism</option><option>Fallen tree</option><option>Other</option></select></div>
-        <div class="f"><label for="pr_where">Where in the building?</label><input type="text" id="pr_where" name="Property: Area damaged" placeholder="e.g. 2nd floor bathroom, ceiling of the store below"></div>
-        <div class="f"><label for="pr_stop">Has the source been stopped?</label><select id="pr_stop" name="Property: Source stopped"><option value="">Choose</option><option>Yes</option><option>No, still happening</option><option>Not sure</option></select></div>
-        <div class="f"><label for="pr_live">Can the home or business still be used?</label><select id="pr_live" name="Property: Usable"><option value="">Choose</option><option>Yes</option><option>Partly</option><option>No, we had to move out / close</option></select></div>
-        <div class="f"><label for="pr_est">Estimated damage ($) <span class="opt">(optional)</span></label><input type="number" id="pr_est" name="Property: Estimated damage $" min="0" inputmode="numeric"></div>
-        <div class="f"><label for="pr_mit">Repair or water-removal company called? <span class="opt">(optional)</span></label><input type="text" id="pr_mit" name="Property: Mitigation company"></div>
-        <div class="f"><label for="pr_rep">Police or fire report number <span class="opt">(theft, vandalism or fire)</span></label><input type="text" id="pr_rep" name="Property: Report number"></div>
-        <div class="f"><label for="pr_ten">Tenants or units affected <span class="opt">(optional)</span></label><input type="text" id="pr_ten" name="Property: Units affected"></div>
+        <div class="f full"><label for="p_addr">Property / business address</label><input type="text" id="p_addr" name="CPL: Property address" data-req></div>
+        <div class="f full"><label for="p_ops">What happens at the location?</label><textarea id="p_ops" name="CPL: Operations" placeholder="e.g. 3-story building, ground-floor retail, 2 apartments upstairs"></textarea></div>
+        <div class="f"><label for="p_int">Your interest</label><select id="p_int" name="CPL: Interest"><option value="">Choose</option><option>Building owner, I rent it out</option><option>Building owner, I occupy part</option><option>Tenant / business owner</option></select></div>
+        <div class="f"><label for="p_con">Construction</label><select id="p_con" name="CPL: Construction"><option value="">Choose</option><option>Frame (wood)</option><option>Joisted masonry (brick)</option><option>Non-combustible</option><option>Fire resistive</option><option>Not sure</option></select></div>
+        <div class="f"><label for="p_yr">Year built</label><input type="number" id="p_yr" name="CPL: Year built" min="1800" max="2027" inputmode="numeric"></div>
+        <div class="f"><label for="p_st">Stories</label><input type="number" id="p_st" name="CPL: Stories" min="1" inputmode="numeric"></div>
+        <div class="f"><label for="p_sq">Total square feet</label><input type="number" id="p_sq" name="CPL: Square feet" min="0" inputmode="numeric"></div>
+        <div class="f"><label for="p_res">Apartments (units)</label><input type="number" id="p_res" name="CPL: Residential units" min="0" inputmode="numeric"></div>
+        <div class="f"><label for="p_com">Stores / commercial units</label><input type="number" id="p_com" name="CPL: Commercial units" min="0" inputmode="numeric"></div>
+        <div class="f"><label for="p_spr">Sprinklers</label><select id="p_spr" name="CPL: Sprinklered"><option value="">Choose</option><option>Yes, fully</option><option>Partially</option><option>No</option></select></div>
+        <div class="f"><label for="p_bv">Building value ($) <span class="opt">(if owner)</span></label><input type="number" id="p_bv" name="CPL: Building value $" min="0" inputmode="numeric"></div>
+        <div class="f"><label for="p_cv">Contents / equipment ($)</label><input type="number" id="p_cv" name="CPL: Contents value $" min="0" inputmode="numeric"></div>
+        <div class="f"><label for="p_rev">Annual sales or rents ($)</label><input type="number" id="p_rev" name="CPL: Annual revenue $" min="0" inputmode="numeric"></div>
+        <div class="f full"><label for="p_upd">Updates to roof, wiring, plumbing, heating <span class="opt">(years, if known)</span></label><input type="text" id="p_upd" name="CPL: Updates" placeholder="e.g. Roof 2018, wiring 2011"></div>
       </div>
     </fieldset>
 
-    <fieldset class="sec" id="s_liab" hidden>
-      <legend><h2><span class="n">·</span>Injury or damage to someone else</h2></legend>
+    <fieldset class="sec" id="s_home" hidden>
+      <legend><h2><span class="n">·</span>Homeowners / dwelling</h2></legend>
       <div class="grid">
-        <div class="f"><label for="li_name">Name of the person making the claim</label><input type="text" id="li_name" name="Liability: Claimant name" data-req></div>
-        <div class="f"><label for="li_phone">Their phone or address <span class="opt">(optional)</span></label><input type="text" id="li_phone" name="Liability: Claimant contact"></div>
-        <div class="f"><label for="li_who">Who are they?</label><select id="li_who" name="Liability: Claimant is"><option value="">Choose</option><option>Customer</option><option>Tenant</option><option>Visitor / passer-by</option><option>Contractor</option><option>Other</option></select></div>
-        <div class="f"><label for="li_inj">Was anyone injured?</label><select id="li_inj" name="Liability: Injury"><option value="">Choose</option><option>Yes, went to hospital / doctor</option><option>Yes, minor</option><option>No, property damage only</option><option>Not sure</option></select></div>
-        <div class="f full"><label for="li_desc">Injury or damage claimed <span class="opt">(optional)</span></label><input type="text" id="li_desc" name="Liability: Injury/damage described"></div>
-        <div class="f"><label for="li_att">Have they hired a lawyer or sent papers?</label><select id="li_att" name="Liability: Attorney/suit"><option value="">Choose</option><option>No</option><option>Letter from a lawyer</option><option>Served with lawsuit papers</option><option>Not sure</option></select></div>
-        <div class="f"><label for="li_wit">Witnesses or video? <span class="opt">(optional)</span></label><input type="text" id="li_wit" name="Liability: Witnesses/video" placeholder="Names, phone numbers, camera footage"></div>
-        <div class="f full"><p class="hint" style="margin:0">Don't admit fault or promise payment to the other person. Keep any letters or lawsuit papers and send them to us right away; there are short legal deadlines to respond.</p></div>
+        <div class="f full"><label for="h_addr">Home address</label><input type="text" id="h_addr" name="Home: Address" data-req></div>
+        <div class="f"><label for="h_type">Type of home</label><select id="h_type" name="Home: Type"><option value="">Choose</option><option>1 family</option><option>2 family</option><option>3–4 family</option><option>Condo</option><option>Co-op</option><option>Renter</option></select></div>
+        <div class="f"><label for="h_occ">Who lives there?</label><select id="h_occ" name="Home: Occupancy"><option value="">Choose</option><option>I live there</option><option>I live there and rent part</option><option>Fully rented to tenants</option><option>Vacant</option></select></div>
+        <div class="f"><label for="h_yr">Year built</label><input type="number" id="h_yr" name="Home: Year built" min="1800" max="2027" inputmode="numeric"></div>
+        <div class="f"><label for="h_sq">Square feet</label><input type="number" id="h_sq" name="Home: Square feet" min="0" inputmode="numeric"></div>
+        <div class="f"><label for="h_mort">Mortgage on the home?</label><select id="h_mort" name="Home: Mortgage"><option value="">Choose</option><option>Yes</option><option>No</option></select></div>
+        <div class="f"><label for="h_extra">Pool, trampoline, dog, home business? <span class="opt">(optional)</span></label><input type="text" id="h_extra" name="Home: Special items"></div>
       </div>
     </fieldset>
 
     <fieldset class="sec" id="s_auto" hidden>
-      <legend><h2><span class="n">·</span>Auto accident details</h2></legend>
+      <legend><h2><span class="n">·</span>Personal auto</h2></legend>
       <div class="grid">
-        <div class="f"><label for="au_veh">Your vehicle <span class="opt">(year, make, model)</span></label><input type="text" id="au_veh" name="Auto: Insured vehicle" data-req></div>
-        <div class="f"><label for="au_drv">Who was driving?</label><input type="text" id="au_drv" name="Auto: Driver"></div>
-        <div class="f"><label for="au_pol">Police report / precinct <span class="opt">(optional)</span></label><input type="text" id="au_pol" name="Auto: Police report"></div>
-        <div class="f"><label for="au_inj">Anyone injured?</label><select id="au_inj" name="Auto: Injuries"><option value="">Choose</option><option>No</option><option>Yes, in my vehicle</option><option>Yes, in the other vehicle</option><option>Yes, a pedestrian</option></select></div>
-        <div class="f"><label for="au_drive">Can your vehicle be driven?</label><select id="au_drive" name="Auto: Drivable"><option value="">Choose</option><option>Yes</option><option>No (where is it now? add below)</option></select></div>
-        <div class="f full"><label for="au_other">Other driver, vehicle and insurance <span class="opt">(optional)</span></label><textarea id="au_other" name="Auto: Other party" placeholder="Name, phone, plate number, insurance company and policy number"></textarea></div>
+        <div class="f full"><label for="a_veh">Vehicles <span class="opt">(year, make, model)</span></label><textarea id="a_veh" name="Auto: Vehicles" placeholder="2021 Toyota Camry&#10;2018 Honda CR-V" data-req></textarea></div>
+        <div class="f full"><label for="a_drv">Drivers <span class="opt">(name, date of birth, years licensed)</span></label><textarea id="a_drv" name="Auto: Drivers"></textarea></div>
+        <div class="f"><label for="a_zip">ZIP code where cars are parked</label><input type="text" id="a_zip" name="Auto: Garaging ZIP" inputmode="numeric" maxlength="10"></div>
+        <div class="f"><label for="a_inc">Accidents or tickets, last 3 years</label><select id="a_inc" name="Auto: Accidents/tickets"><option value="">Choose</option><option>None</option><option>Yes (describe in notes)</option></select></div>
       </div>
     </fieldset>
 
     <fieldset class="sec" id="s_wc" hidden>
-      <legend><h2><span class="n">·</span>Employee injury details</h2></legend>
+      <legend><h2><span class="n">·</span>Workers comp &amp; disability</h2></legend>
       <div class="grid">
-        <div class="f"><label for="wc_name">Employee name</label><input type="text" id="wc_name" name="WC: Employee name" data-req></div>
-        <div class="f"><label for="wc_job">Job title</label><input type="text" id="wc_job" name="WC: Job title"></div>
-        <div class="f"><label for="wc_part">Injury and body part</label><input type="text" id="wc_part" name="WC: Injury / body part" placeholder="e.g. cut, left hand"></div>
-        <div class="f"><label for="wc_med">Medical treatment</label><select id="wc_med" name="WC: Treatment"><option value="">Choose</option><option>None / first aid only</option><option>Doctor or clinic</option><option>Emergency room</option><option>Admitted to hospital</option></select></div>
-        <div class="f"><label for="wc_lost">Missing work because of it?</label><select id="wc_lost" name="WC: Lost time"><option value="">Choose</option><option>No</option><option>Yes</option><option>Not yet known</option></select></div>
-        <div class="f"><label for="wc_rep">Date employee told you <span class="opt">(optional)</span></label><input type="date" id="wc_rep" name="WC: Date reported to employer"></div>
-        <div class="f full"><p class="hint" style="margin:0">In New York the employer must report a work injury to the insurance company within 10 days. We'll file it for you once we have these details.</p></div>
+        <div class="f full"><label for="w_ops">What does the business do?</label><input type="text" id="w_ops" name="WC: Business description" data-req></div>
+        <div class="f"><label for="w_ft">Full-time employees</label><input type="number" id="w_ft" name="WC: Full-time employees" min="0" inputmode="numeric"></div>
+        <div class="f"><label for="w_pt">Part-time employees</label><input type="number" id="w_pt" name="WC: Part-time employees" min="0" inputmode="numeric"></div>
+        <div class="f"><label for="w_pay">Total annual payroll ($)</label><input type="number" id="w_pay" name="WC: Annual payroll $" min="0" inputmode="numeric"></div>
+        <div class="f"><label for="w_need">Coverage needed</label><select id="w_need" name="WC: Needed"><option>Workers comp + DBL/PFL</option><option>Workers comp only</option><option>DBL/PFL only</option><option>Not sure</option></select></div>
+      </div>
+    </fieldset>
+
+    <fieldset class="sec" id="s_cauto" hidden>
+      <legend><h2><span class="n">·</span>Commercial auto</h2></legend>
+      <div class="grid">
+        <div class="f full"><label for="ca_veh">Vehicles <span class="opt">(year, make, model, use)</span></label><textarea id="ca_veh" name="Comm auto: Vehicles" data-req></textarea></div>
+        <div class="f"><label for="ca_drv">Number of drivers</label><input type="number" id="ca_drv" name="Comm auto: Drivers" min="0" inputmode="numeric"></div>
+        <div class="f"><label for="ca_rad">Farthest regular trip</label><select id="ca_rad" name="Comm auto: Radius"><option value="">Choose</option><option>Within 50 miles</option><option>50–200 miles</option><option>Over 200 miles</option></select></div>
       </div>
     </fieldset>
 
     <fieldset class="sec" id="s_other" hidden>
-      <legend><h2><span class="n">·</span>Other details</h2></legend>
+      <legend><h2><span class="n">·</span>Umbrella &amp; other</h2></legend>
       <div class="grid">
-        <div class="f full"><label for="ot_desc">Anything else we should know?</label><textarea id="ot_desc" name="Other: Details" placeholder="If you received lawsuit papers, tell us the date you got them." data-req></textarea></div>
+        <div class="f full"><label for="o_desc">What do you need?</label><textarea id="o_desc" name="Other: Request" placeholder="e.g. $2M umbrella over my building and auto, liquor liability for a restaurant" data-req></textarea></div>
       </div>
     </fieldset>
 
-    <fieldset class="sec">
-      <legend><h2><span class="n">05</span>Photos and documents</h2></legend>
-      <p class="hint" style="margin-bottom:0">After you send this form, email photos of the damage, repair estimates, receipts and any police report or letters to <a href="mailto:info@bestchampioninsurance.com">info@bestchampioninsurance.com</a>, or fax them to 646.218.8762. Photos taken before cleanup help the claim the most.</p>
-      <div class="grid" style="margin-top:14px">
-        <div class="full"><label class="check"><input type="checkbox" id="consent" required><span>I confirm this information is true to the best of my knowledge, and I agree that Best Champion Insurance Brokerage may report this claim to the insurance company on my behalf. Sending this form does not guarantee the claim will be covered.</span></label>
-        <p class="errmsg" id="consent_err" hidden>Please check this box so we can report the claim.</p></div>
+    <fieldset class="sec" data-sec="current">
+      <legend><h2><span class="n">03</span>Current insurance &amp; timing</h2></legend>
+      <div class="grid">
+        <div class="f"><label for="i_now">Insured right now?</label><select id="i_now" name="Currently insured"><option value="">Choose</option><option>Yes</option><option>No, new purchase</option><option>No, policy lapsed</option></select></div>
+        <div class="f"><label for="i_car">Current company <span class="opt">(optional)</span></label><input type="text" id="i_car" name="Current carrier"></div>
+        <div class="f"><label for="i_exp">Current policy ends <span class="opt">(optional)</span></label><input type="date" id="i_exp" name="Current expiration"></div>
+        <div class="f"><label for="i_prem">Current yearly cost ($) <span class="opt">(optional)</span></label><input type="number" id="i_prem" name="Current premium $" min="0" inputmode="numeric"></div>
+        <div class="f"><label for="i_eff">Coverage needed by</label><input type="date" id="i_eff" name="Desired effective date"></div>
+        <div class="f"><label for="i_clm">Claims in the last 5 years</label><select id="i_clm" name="Claims last 5 years"><option value="">Choose</option><option>None</option><option>Yes (describe below)</option></select></div>
+        <div class="f full"><label for="i_notes">Anything else we should know? <span class="opt">(optional)</span></label><textarea id="i_notes" name="Notes"></textarea></div>
+        <div class="full"><label class="check"><input type="checkbox" id="consent" required><span>I agree that Best Champion Insurance Brokerage may contact me about this request and share these details with insurance companies to get quotes. Requesting a quote does not start coverage.</span></label>
+        <p class="errmsg" id="consent_err" hidden>Please check this box so we can request quotes for you.</p></div>
       </div>
     </fieldset>
       <div class="qf-honey" aria-hidden="true"><label for="q-honey">Leave this field empty</label><input type="text" id="q-honey" name="_honey" tabindex="-1" autocomplete="off"></div>
     <div class="submit-row">
-      <button type="submit" class="qf-submit" id="submitBtn">Report claim</button>
+      <button type="submit" class="qf-submit" id="submitBtn">Send quote request</button>
       <span class="status" id="status" aria-live="polite">Takes about 5 minutes.</span>
     </div>
   </form>
@@ -772,19 +769,24 @@
     <pre class="summary" id="summary"></pre>
     <div class="row">
       <button type="button" class="btn" id="copyBtn">Copy my answers</button>
-      <button type="button" class="btn ghost" id="againBtn">Report another claim</button>
+      <button type="button" class="btn ghost" id="againBtn">Start a new request</button>
     </div>
     <p class="copy-msg" id="copyMsg" aria-live="polite"></p>
   </div>
 </section>
         </div>
         <aside class="how-card inner-aside" aria-labelledby="how-title">
-          <h3 id="how-title">How Claims Work</h3>
+          <h3 id="how-title">How It Works</h3>
           <ol class="how-steps">
-            <li>Make sure everyone is safe, then tell us what happened here.</li>
-            <li>We report the claim to your insurance company and call you, usually within one business day.</li>
-            <li>We track the adjuster and push the carrier when things stall.</li>
+            <li>Tell us what you want insured.</li>
+            <li>A licensed broker shops several carriers for you.</li>
+            <li>We go over your options, usually within one to two business days.</li>
           </ol>
+          <div class="how-more">
+            <h4>Just need a quick quote?</h4>
+            <p>For a single personal policy, the short form on our home page takes about a minute.</p>
+            <a href="/#quote">Use the quick quote form &rarr;</a>
+          </div>
           <div class="how-contact">
             <h4>Contact Us</h4>
             <p>Prefer to talk? Reach a broker directly.</p>
@@ -814,7 +816,7 @@
           <li><a href="/#coverage">Personal</a></li>
           <li><a href="/#coverage">Business</a></li>
           <li><a href="/#quote">Get a Quote</a></li>
-          <li><a href="/quote-request/">Detailed Quote Request</a></li>
+          <li><a href="/quote/">Detailed Quote Request</a></li>
         </ul>
       </div>
       <div class="foot-col">
@@ -822,7 +824,7 @@
         <ul>
           <li><a href="/#why">About Us</a></li>
           <li><a href="/#claims">Claims</a></li>
-          <li><a href="/report-a-claim/">Report a Claim</a></li>
+          <li><a href="/claims/">Report a Claim</a></li>
           <li><a href="/#contact">Contact</a></li>
         </ul>
       </div>
@@ -856,7 +858,7 @@
   var ENDPOINT='https://formsubmit.co/ajax/info@bestchampioninsurance.com';
   var $=function(s){return document.querySelector(s);};
   var form=$('#qf'); if(!form) return;
-  var MULTI=false, KIND='Claim report', NEED='Needed for this claim.';
+  var MULTI=true, KIND='Detailed quote request', NEED='Needed for this quote.';
   function syncSections(){ document.querySelectorAll('#covs input').forEach(function(i){ document.getElementById(i.dataset.show).hidden=!i.checked; }); }
   form.addEventListener('change',function(e){ if(e.target.closest('#covs')){ syncSections(); $('#cov_err').hidden=true; } });
   function clearErr(){ document.querySelectorAll('.f.err').forEach(function(f){f.classList.remove('err');}); document.querySelectorAll('.errmsg.field').forEach(function(m){m.remove();}); }
@@ -927,8 +929,8 @@
   });
   function showDone(ok,text){
     $('#formView').hidden=true; $('#doneView').hidden=false; $('#summary').textContent=text;
-    $('#doneTitle').textContent=ok?'Claim sent to Best Champion':'One more step';
-    $('#doneText').innerHTML=ok?'Thank you. We will report this to your insurance company and call you, usually within one business day. Next, email your photos and documents to <a href="mailto:info@bestchampioninsurance.com">info@bestchampioninsurance.com</a> or fax them to 646.218.8762. A copy of your answers is below.':'This page could not send your claim automatically. Copy your answers with the button below and email them to <a href="mailto:info@bestchampioninsurance.com">info@bestchampioninsurance.com</a> or fax them to 646.218.8762, or call <a href="tel:+12122336888">212.233.6888</a> and we will take the claim by phone.';
+    $('#doneTitle').textContent=ok?'Request sent':'One more step';
+    $('#doneText').innerHTML=ok?'Thank you. A broker at Best Champion will review your request and contact you, usually within one to two business days. A copy of your answers is below.':'This page could not send your answers automatically. Copy them with the button below and email them to <a href="mailto:info@bestchampioninsurance.com">info@bestchampioninsurance.com</a> or fax them to 646.218.8762, or call <a href="tel:+12122336888">212.233.6888</a> and we will take your request by phone.';
     $('#doneView').scrollIntoView({block:'start',behavior:'smooth'});
   }
   $('#copyBtn').addEventListener('click',function(){
