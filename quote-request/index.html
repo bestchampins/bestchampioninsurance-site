@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detailed Quote Request | Best Champion Insurance Brokerage</title>
+<meta name="description" content="Request a detailed insurance quote for commercial property, homeowners, auto, workers comp and more. Independent broker serving NY, NJ, CT and PA since 1998.">
+<link rel="canonical" href="https://bestchampioninsurance.com/quote-request/">
+<link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon-64.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1B2A20;
+    --paper:#FAF7EF;
+    --panel:#F1ECDC;
+    --brand:#5C8A5E;
+    --brand-dark:#3E6B45;
+    --deep:#1F3B2C;
+    --deep-2:#16281D;
+    --gold:#B08A3E;
+    --line: rgba(27,42,32,0.18);
+    --max: 1180px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Source Serif 4', Georgia, serif;
+    font-size:17px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.display{
+    font-family:'Playfair Display', Georgia, serif;
+    font-weight:700;
+    line-height:1.05;
+    letter-spacing:-0.005em;
+    margin:0;
+  }
+  a{color:inherit; text-decoration:none;}
+  img,svg{display:block; max-width:100%;}
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 32px;}
+  ul{margin:0; padding:0; list-style:none;}
+  button{font-family:inherit;}
+
+  :focus-visible{outline:3px solid var(--gold); outline-offset:3px;}
+
+  /* ---------- NAV ---------- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(244,249,240,0.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:18px 0;
+  }
+  .logo{
+    display:flex; align-items:center; gap:10px;
+    font-family:'Playfair Display', Georgia, serif;
+    font-weight:700; font-size:20px; letter-spacing:0;
+  }
+  .logo .torch{width:34px; height:auto; flex:none;}
+  .logo span{white-space:nowrap;}
+  nav.links{display:flex; align-items:center; gap:34px;}
+  nav.links a.navlink{font-size:15px; font-weight:500; color:var(--deep);}
+  .nav-right{display:flex; align-items:center; gap:22px;}
+  .phone-link{font-size:15px; font-weight:600; color:var(--deep); white-space:nowrap;}
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center;
+    padding:12px 22px;
+    font-weight:600; font-size:15px;
+    border:2px solid var(--ink);
+    background:var(--ink); color:var(--paper);
+    white-space:nowrap;
+    transition:transform .15s ease, background .15s ease, color .15s ease;
+  }
+  .btn:hover{background:var(--paper); color:var(--ink); transform:translateY(-1px);}
+  .btn.ghost{background:transparent; color:var(--ink);}
+  .btn.ghost:hover{background:var(--ink); color:var(--paper);}
+  @media(max-width:860px){ nav.links{display:none;} }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    padding:76px 0 60px;
+    display:grid; grid-template-columns:1.05fr 0.95fr; gap:40px; align-items:center;
+  }
+  .hero h1{
+    font-size:clamp(44px, 6vw, 76px);
+    color:var(--deep-2);
+  }
+  .hero .kicker{
+    font-size:14px; font-weight:600; letter-spacing:0.02em;
+    color:var(--brand-dark);
+    margin-bottom:16px;
+    display:flex; align-items:center; gap:8px;
+  }
+  .hero .kicker .dot{width:7px;height:7px;background:var(--gold); border-radius:50%; flex:none;}
+  .hero p.lede{
+    font-size:19px; max-width:52ch; margin:22px 0 30px; color:#243A2E;
+  }
+  .hero .ctas{display:flex; gap:16px; flex-wrap:wrap; margin-bottom:38px;}
+  .stat-row{
+    display:flex; gap:36px; border-top:1px solid var(--line); padding-top:26px; flex-wrap:wrap;
+  }
+  .stat b{
+    display:block; font-family:'Big Shoulders Display'; font-weight:800; font-size:32px; color:var(--deep-2);
+  }
+  .stat span{font-size:14px; color:#4B5F52;}
+
+  .hero-art{
+    background:linear-gradient(180deg, #DCEED8 0%, var(--panel) 100%);
+    border:1px solid var(--line);
+    padding:20px 20px 0;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero-art svg{width:100%; height:auto; display:block;}
+
+  @media(max-width:900px){
+    .hero{grid-template-columns:1fr; padding-top:44px;}
+    .hero-art{order:-1;}
+  }
+
+  /* ---------- TRUST BAR ---------- */
+  .trust{
+    background:var(--deep);
+    color:var(--paper);
+    padding:18px 0;
+  }
+  .trust .wrap{
+    display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:14px;
+    font-size:14px; font-weight:500; letter-spacing:0.01em;
+  }
+  .trust .states{display:flex; gap:10px; flex-wrap:wrap;}
+  .trust .states b{color:var(--brand); font-weight:700;}
+  .trust .sep{opacity:0.35;}
+
+  /* ---------- SECTION HEADER ---------- */
+  .section{padding:96px 0;}
+  .section-head{
+    display:flex; justify-content:space-between; align-items:flex-end; gap:24px;
+    margin-bottom:52px; flex-wrap:wrap;
+    padding-bottom:22px; border-bottom:1px solid var(--gold);
+  }
+  .section-head h2{font-size:clamp(32px,4vw,46px); color:var(--deep-2); max-width:16ch;}
+  .section-head p{max-width:38ch; color:#3E5347; font-size:16px; margin:0;}
+
+  /* ---------- COVERAGE TABS ---------- */
+  .tabs{
+    display:flex; gap:6px;
+    border-bottom:1px solid var(--gold);
+  }
+  .tab-btn{
+    background:none; border:none; cursor:pointer;
+    font-family:'Playfair Display', Georgia, serif;
+    font-size:19px; font-weight:600;
+    color:#7C8F80;
+    padding:14px 30px 16px;
+    border-bottom:3px solid transparent;
+    margin-bottom:-1px;
+    transition:color .15s ease;
+  }
+  .tab-btn:hover{color:var(--deep-2);}
+  .tab-btn.active{color:var(--deep-2); border-bottom-color:var(--gold);}
+
+  .tab-panel{
+    border:1px solid var(--line); border-top:none;
+    padding:44px 40px;
+  }
+  .tab-panel.dark{background:var(--deep); color:var(--paper); border-color:var(--deep);}
+  .tab-panel-inner{
+    display:grid; grid-template-columns:1.1fr 1fr; gap:40px; align-items:start;
+  }
+  .tab-panel h3{font-size:32px; margin:6px 0 12px;}
+  .tab-panel.dark h3{color:var(--paper);}
+  .tab-panel .num{font-size:13px; font-weight:600; color:var(--brand-dark); margin-bottom:4px;}
+  .tab-panel.dark .num{color:var(--brand);}
+  .tab-panel p.desc{font-size:16px; color:#3E5347; margin:0; max-width:38ch;}
+  .tab-panel.dark p.desc{color:#CFE3CC;}
+  .tab-panel ul{display:flex; flex-direction:column; gap:0;}
+  .tab-panel li{
+    font-size:15px; padding:12px 0; border-top:1px solid var(--line);
+  }
+  .tab-panel li:last-child{border-bottom:1px solid var(--line);}
+  .tab-panel.dark li{border-color:rgba(244,249,240,0.18);}
+  .panel-link{
+    display:inline-block; margin-top:26px; font-size:14px; font-weight:600;
+    color:var(--brand); border-bottom:1px solid var(--brand);
+  }
+  @media(max-width:700px){
+    .tab-panel-inner{grid-template-columns:1fr; gap:22px;}
+    .tab-panel{padding:32px 24px;}
+    .tab-btn{padding:12px 16px 14px; font-size:16px;}
+  }
+
+  /* ---------- BUSINESS DETAIL ---------- */
+  .biz{
+    display:grid; grid-template-columns:1fr 0.85fr; gap:64px; align-items:start;
+  }
+  .biz-copy p{color:#3E5347; max-width:50ch; margin:0 0 18px;}
+  .biz-list{margin-top:28px; display:flex; flex-direction:column;}
+  .biz-list li{
+    display:flex; gap:18px; padding:18px 0; border-top:1px solid var(--line);
+  }
+  .biz-list li:last-child{border-bottom:1px solid var(--line);}
+  .biz-list .mark{color:var(--gold); font-family:'Playfair Display'; font-size:20px; flex:none; width:20px;}
+  .biz-list h4{margin:0 0 4px; font-size:17px; font-weight:600; font-family:'Playfair Display';}
+  .biz-list p{margin:0; font-size:14.5px; color:#4B5F52;}
+
+  .quote-form{
+    background:var(--panel); border:1px solid var(--gold);
+    padding:36px 32px;
+  }
+  .quote-form h3{font-size:24px; color:var(--deep-2); margin-bottom:10px;}
+  .quote-form .sub{font-size:14.5px; color:#4B5F52; margin-bottom:26px;}
+  .quote-form label{
+    display:block; font-size:13px; font-weight:600; color:var(--deep); margin-bottom:6px;
+  }
+  .field{margin-bottom:18px;}
+  .quote-form input, .quote-form textarea{
+    width:100%; padding:11px 12px;
+    border:1px solid var(--line); background:var(--paper);
+    font-family:'Source Serif 4', Georgia, serif; font-size:15px; color:var(--ink);
+  }
+  .quote-form textarea{resize:vertical; min-height:90px;}
+  .quote-form input:focus, .quote-form textarea:focus{outline:2px solid var(--gold); outline-offset:1px;}
+  .quote-form .btn{width:100%; border-color:var(--ink); margin-top:6px;}
+  .quote-form .note{font-size:12.5px; color:#7C8F80; margin-top:14px;}
+
+  @media(max-width:900px){ .biz{grid-template-columns:1fr; gap:40px;} }
+
+  /* ---------- HOME INSURANCE DETAIL ---------- */
+  .info-table{width:100%; border-collapse:collapse; margin:20px 0 8px;}
+  .info-table th{
+    text-align:left; font-family:'Playfair Display', Georgia, serif; font-size:15px;
+    color:var(--deep-2); border-bottom:1px solid var(--gold); padding:10px 14px 10px 0;
+  }
+  .info-table td{
+    text-align:left; font-size:14.5px; color:#3E5347; border-bottom:1px solid var(--line);
+    padding:12px 14px 12px 0; vertical-align:top;
+  }
+  .info-table td:first-child, .info-table th:first-child{font-weight:600; color:var(--deep); white-space:nowrap;}
+  .two-col-lists{display:grid; grid-template-columns:1fr 1fr; gap:48px; margin-top:30px;}
+  .two-col-lists h4{font-family:'Playfair Display', Georgia, serif; font-size:19px; color:var(--deep-2); margin-bottom:14px;}
+  .two-col-lists ul{display:flex; flex-direction:column; gap:9px;}
+  .two-col-lists li{font-size:14.5px; color:#3E5347; padding-top:9px; border-top:1px solid var(--line);}
+  .faq-item{border-top:1px solid var(--line); padding:18px 0;}
+  .faq-item:last-child{border-bottom:1px solid var(--line);}
+  .faq-item h4{font-family:'Playfair Display', Georgia, serif; font-size:17px; color:var(--deep-2); margin:0 0 8px;}
+  .faq-item p{font-size:14.5px; color:#3E5347; margin:0;}
+  @media(max-width:700px){
+    .two-col-lists{grid-template-columns:1fr;}
+    .info-table{font-size:13px;}
+  }
+
+
+  .why-head{max-width:640px; margin-bottom:44px;}
+  .why-head h2{font-size:clamp(30px,3.6vw,42px); color:var(--deep-2); margin-bottom:16px;}
+  .why-head p{color:#3E5347; margin:0;}
+  .why-list{
+    display:grid; grid-template-columns:1fr 1fr; gap:0 56px;
+    border-bottom:1px solid var(--line);
+  }
+  .why-list li{
+    display:flex; gap:16px; padding:22px 0; border-top:1px solid var(--line);
+  }
+  .why-list b{font-family:'Big Shoulders Display'; font-size:22px; color:var(--brand-dark); flex:none; width:36px;}
+  .why-list div h4{margin:0 0 4px; font-size:16.5px; font-weight:600;}
+  .why-list div p{margin:0; font-size:14.5px; color:#4B5F52;}
+  @media(max-width:800px){ .why-list{grid-template-columns:1fr;} }
+
+
+  @media(max-width:860px){ .why{grid-template-columns:1fr; gap:36px;} }
+
+  /* ---------- CLAIMS / DEEP BAND ---------- */
+  .claims{
+    background:var(--deep-2); color:var(--paper);
+    padding:100px 0;
+    position:relative;
+  }
+  .claims .wrap{display:grid; grid-template-columns:1.2fr 0.8fr; gap:50px; align-items:center;}
+  .claims h2{font-size:clamp(32px,4.4vw,52px); max-width:14ch; margin-bottom:20px;}
+  .claims p{color:#CFE3CC; font-size:17px; max-width:46ch; margin:0 0 30px;}
+  .claims .torch-mark{width:70px; height:auto; justify-self:end;}
+  @media(max-width:860px){
+    .claims .wrap{grid-template-columns:1fr;}
+    .claims .torch-mark{justify-self:start; width:50px; height:auto;}
+  }
+  .claims .btn{border-color:var(--paper);}
+  .claims .btn:not(:hover){background:var(--gold); border-color:var(--gold); color:var(--deep-2);}
+
+  /* ---------- SERVICE AREA ---------- */
+  .states-grid{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:1px;
+    background:var(--gold); border:1px solid var(--gold);
+  }
+  .state-cell{
+    background:var(--paper); padding:30px 22px; min-height:150px;
+    display:flex; flex-direction:column; justify-content:space-between;
+  }
+  .state-cell b{font-family:'Big Shoulders Display'; font-size:40px; color:var(--deep-2);}
+  .state-cell span{font-size:14px; color:#4B5F52;}
+  @media(max-width:700px){ .states-grid{grid-template-columns:repeat(2,1fr);} }
+
+  /* ---------- CTA ---------- */
+  .cta-band{
+    background:var(--brand);
+    padding:70px 0;
+  }
+  .cta-band .wrap{
+    display:flex; justify-content:space-between; align-items:center; gap:24px; flex-wrap:wrap;
+  }
+  .cta-band h2{font-size:clamp(28px,4vw,40px); color:var(--deep-2); max-width:16ch;}
+  .cta-band .btn{border-color:var(--ink);}
+  .cta-band .actions{display:flex; gap:16px; align-items:center; flex-wrap:wrap;}
+  .cta-band .call{font-weight:600; font-size:15px; color:var(--deep-2);}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--deep-2); color:#CFE3CC; padding:72px 0 30px;}
+  .foot-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:40px; padding-bottom:50px; border-bottom:1px solid rgba(244,249,240,0.15);}
+  .foot-brand .logo{color:var(--paper);}
+  .foot-brand p{color:#9DB6A5; font-size:14.5px; max-width:34ch; margin:16px 0 0;}
+  .foot-col h5{font-size:13px; letter-spacing:0.03em; color:var(--brand); margin:0 0 16px; font-weight:600;}
+  .foot-col ul{display:flex; flex-direction:column; gap:10px;}
+  .foot-col a{font-size:14.5px; color:#CFE3CC;}
+  .foot-col a:hover{color:var(--brand);}
+  .foot-bottom{
+    display:flex; justify-content:space-between; padding-top:26px; font-size:13px; color:#82997E; flex-wrap:wrap; gap:10px;
+  }
+  @media(max-width:860px){ .foot-grid{grid-template-columns:1fr 1fr; row-gap:34px;} }
+  @media(max-width:500px){ .foot-grid{grid-template-columns:1fr;} }
+
+  /* ---------- FIXES: padding, mobile header, forms ---------- */
+  .wrap.nav, .wrap.hero{padding-left:32px; padding-right:32px;}
+  .menu-toggle{
+    display:none; background:none; border:1px solid var(--line); cursor:pointer;
+    width:42px; height:42px; padding:0; align-items:center; justify-content:center; flex:none;
+  }
+  .menu-toggle span{display:block; width:18px; height:2px; background:var(--deep-2); position:relative;}
+  .menu-toggle span::before, .menu-toggle span::after{content:""; position:absolute; left:0; width:18px; height:2px; background:var(--deep-2);}
+  .menu-toggle span::before{top:-6px;} .menu-toggle span::after{top:6px;}
+  .navlink.menu-only{display:none;}
+  @media(max-width:860px){
+    .nav{position:relative;}
+    .menu-toggle{display:inline-flex;}
+    header.open nav.links{
+      display:flex; flex-direction:column; align-items:stretch; gap:0;
+      position:absolute; top:100%; left:0; right:0;
+      background:var(--paper); border-bottom:1px solid var(--line);
+      box-shadow:0 10px 24px rgba(27,42,32,0.08);
+    }
+    header.open nav.links a.navlink{padding:14px 32px; border-top:1px solid var(--line); font-size:16px;}
+    .navlink.menu-only{display:block;}
+    .nav-right{gap:12px;}
+  }
+  @media(max-width:600px){
+    .wrap, .wrap.nav, .wrap.hero{padding-left:20px; padding-right:20px;}
+    header.open nav.links a.navlink{padding-left:20px; padding-right:20px;}
+    .nav{padding:12px 20px; gap:10px;}
+    .phone-link{display:none;}
+    .logo{font-size:17px; gap:8px;}
+    .logo .torch{width:26px;}
+    .nav-right .btn{padding:9px 14px; font-size:14px;}
+    .tab-panel{padding:28px 18px;}
+    .quote-form{padding:28px 20px;}
+    .info-table td:first-child, .info-table th:first-child{white-space:normal;}
+    .info-table td, .info-table th{padding-right:10px;}
+  }
+  @media(max-width:420px){
+    .logo span{white-space:normal; line-height:1.1; max-width:9em;}
+  }
+  .quote-form .err{display:none; color:#9B2C2C; font-size:12.5px; margin-top:5px;}
+  .quote-form .field.invalid .err{display:block;}
+  .quote-form .field.invalid input, .quote-form .field.invalid textarea{border-color:#9B2C2C;}
+  .quote-form .req{color:var(--gold);}
+  .tab-panel.dark .quote-form h3{color:var(--deep-2);}
+  .tab-panel.dark .quote-form .note{color:#4B5F52 !important;}
+  .tab-panel.dark .quote-form .note a{color:var(--brand-dark) !important;}
+  .form-status{
+    display:none; margin-top:18px; padding:16px 18px;
+    border:1px solid var(--brand); background:#EAF3E6; color:var(--deep-2); font-size:14.5px;
+  }
+  .form-status.show{display:block;}
+  .form-status strong{display:block; font-family:'Playfair Display', Georgia, serif; font-size:17px; margin-bottom:4px;}
+  .form-status a{text-decoration:underline;}
+
+  /* ---------- QUOTE (Falcones-style) ---------- */
+  #quote{scroll-margin-top:72px;}
+  .quote-banner{
+    background:linear-gradient(115deg, var(--deep-2) 0%, var(--deep) 45%, var(--brand-dark) 100%);
+    color:var(--paper); padding:64px 0 60px; position:relative; overflow:hidden;
+  }
+  .quote-banner::after{
+    content:""; position:absolute; right:-120px; top:-120px; width:420px; height:420px; border-radius:50%;
+    border:1px solid rgba(176,138,62,0.35); pointer-events:none;
+  }
+  .quote-banner .kicker{font-size:13px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:var(--gold); margin-bottom:12px;}
+  .quote-banner h2{font-size:clamp(34px,5vw,54px); color:var(--paper); max-width:20ch;}
+  .quote-banner p{font-size:18px; color:#CFE3CC; margin:14px 0 0; max-width:52ch;}
+  .quote-body{padding-top:64px; padding-bottom:96px;}
+  .quote-grid{display:grid; grid-template-columns:minmax(0,1.65fr) minmax(0,1fr); gap:56px; align-items:start;}
+  .qf h3{font-size:28px; color:var(--deep-2); margin-bottom:8px;}
+  .qf .qf-sub{font-size:15px; color:#4B5F52; margin:0 0 26px;}
+  .qf-row{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+  .qf-field{position:relative; margin-bottom:16px;}
+  .qf-field .ctl{
+    display:block; width:100%; height:58px; margin:0;
+    padding:24px 16px 8px; border:0; border-radius:4px;
+    background:#ECEAE3; color:var(--ink);
+    font-family:'Source Serif 4', Georgia, serif; font-size:16px; line-height:1.4;
+    box-shadow:inset 0 -2px 0 transparent; transition:box-shadow .18s ease, background .18s ease;
+    -webkit-appearance:none; appearance:none;
+  }
+  .qf-field textarea.ctl{height:auto; min-height:132px; padding-top:30px; resize:vertical;}
+  .qf-field select.ctl{
+    padding-right:44px; cursor:pointer;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%231F3B2C' stroke-width='2'/%3E%3C/svg%3E");
+    background-repeat:no-repeat; background-position:right 18px center;
+  }
+  .qf-field select.ctl:invalid{color:#6B7B70;}
+  .qf-field select.ctl option{color:var(--ink);}
+  .qf-field .ctl:hover{background-color:#E6E3DA;}
+  .qf-field .ctl:focus{outline:none; background-color:#E8E5DD; box-shadow:inset 0 -3px 0 var(--brand);}
+  .qf-field .ctl:focus-visible{outline:none;}
+  .qf-field label{
+    position:absolute; left:16px; top:18px; right:16px;
+    font-size:16px; color:#56685C; pointer-events:none;
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+    transform-origin:left top; transition:transform .16s ease, color .16s ease, top .16s ease;
+  }
+  .qf-field textarea.ctl + label{top:18px;}
+  .qf-field .ctl:focus + label,
+  .qf-field .ctl:not(:placeholder-shown) + label,
+  .qf-field select.ctl + label{top:8px; transform:scale(0.78); color:var(--brand-dark); font-weight:600;}
+  .qf-field select.ctl + label{color:#56685C;}
+  .qf-field select.ctl:focus + label{color:var(--brand-dark);}
+  .qf-field .ctl::placeholder{color:transparent;}
+  .qf .req{color:#A33A2B; margin-left:2px;}
+  .qf-note{
+    margin:-16px 0 16px; padding:9px 16px; font-size:13.5px; font-style:italic; color:#56685C;
+    background:#F4F2EC; border-radius:0 0 4px 4px;
+  }
+  .qf-field .err{display:none; color:#9B2C2C; font-size:13px; margin-top:6px;}
+  .qf-field.invalid .err{display:block;}
+  .qf-field.invalid .ctl{box-shadow:inset 0 -3px 0 #9B2C2C; background-color:#F3E6E2;}
+  .qf-honey{position:absolute !important; left:-10000px !important; width:1px; height:1px; overflow:hidden;}
+  .qf-submit{
+    display:inline-flex; align-items:center; justify-content:center; gap:10px;
+    margin-top:10px; padding:16px 34px; min-width:170px;
+    border:0; border-radius:4px; cursor:pointer;
+    background:var(--brand-dark); color:#fff;
+    font-family:'Source Serif 4', Georgia, serif; font-weight:600; font-size:17px; letter-spacing:0.01em;
+    transition:background .15s ease, transform .15s ease;
+  }
+  .qf-submit:hover{background:var(--deep); transform:translateY(-1px);}
+  .qf-submit[disabled]{opacity:0.7; cursor:progress; transform:none;}
+  .qf-legal{font-size:13px; color:#6B7B70; margin:16px 0 0;}
+  .qf-error{
+    display:none; margin-top:18px; padding:14px 16px; border-left:4px solid #9B2C2C;
+    background:#F6E9E5; color:#5A1E1A; font-size:15px;
+  }
+  .qf-error.show{display:block;}
+  .qf-error a{text-decoration:underline; font-weight:600;}
+  .qf-thanks{
+    padding:44px 40px; background:var(--panel); border-top:4px solid var(--brand);
+    border-radius:4px;
+  }
+  .qf-thanks .check{
+    width:52px; height:52px; border-radius:50%; background:var(--brand-dark); color:#fff;
+    display:flex; align-items:center; justify-content:center; margin-bottom:18px;
+  }
+  .qf-thanks h3{font-size:30px; color:var(--deep-2); margin-bottom:10px;}
+  .qf-thanks p{color:#3E5347; margin:0 0 10px; font-size:16.5px;}
+  .qf-thanks a{color:var(--brand-dark); text-decoration:underline; font-weight:600;}
+  .how-card{
+    background:var(--panel); border:1px solid var(--line); border-top:4px solid var(--gold);
+    padding:34px 32px; border-radius:4px;
+  }
+  .how-card h3{font-size:26px; color:var(--deep-2); margin-bottom:22px;}
+  .how-steps{counter-reset:step; display:flex; flex-direction:column; gap:18px; margin:0 0 30px; padding:0; list-style:none;}
+  .how-steps li{display:flex; gap:16px; align-items:flex-start; font-size:16.5px; color:var(--ink); line-height:1.45;}
+  .how-steps li::before{
+    counter-increment:step; content:counter(step);
+    flex:none; width:38px; height:38px; border-radius:50%;
+    background:var(--brand-dark); color:#fff; font-family:'Playfair Display', Georgia, serif; font-weight:700; font-size:17px;
+    display:flex; align-items:center; justify-content:center; margin-top:-6px;
+  }
+  .how-contact{border-top:1px solid var(--gold); padding-top:22px;}
+  .how-contact h4{font-family:'Playfair Display', Georgia, serif; font-size:20px; color:var(--deep-2); margin:0 0 6px;}
+  .how-contact p{margin:0 0 12px; font-size:15px; color:#4B5F52;}
+  .how-contact a{display:flex; align-items:center; gap:10px; font-weight:600; color:var(--brand-dark); font-size:16px; padding:5px 0; overflow-wrap:anywhere;}
+  .how-contact a:hover{color:var(--deep-2); text-decoration:underline;}
+  .how-contact svg{flex:none; width:18px; height:18px;}
+  .tab-quote-cta{
+    margin-top:40px; padding:24px 28px; display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap;
+    background:var(--panel); border:1px solid var(--gold);
+  }
+  .tab-quote-cta p{margin:0; font-size:16px; color:#3E5347; max-width:56ch;}
+  .tab-quote-cta strong{color:var(--deep-2); font-family:'Playfair Display', Georgia, serif; font-size:18px; margin-right:4px;}
+  .tab-quote-cta.dark{background:rgba(244,249,240,0.06); border-color:rgba(176,138,62,0.6);}
+  .tab-quote-cta.dark p{color:#CFE3CC;}
+  .tab-quote-cta.dark strong{color:var(--paper);}
+  .tab-quote-cta.dark .btn{background:var(--paper); color:var(--deep-2); border-color:var(--paper);}
+  .tab-quote-cta.dark .btn:hover{background:transparent; color:var(--paper);}
+  @media(max-width:960px){
+    .quote-grid{grid-template-columns:1fr; gap:40px;}
+  }
+  @media(max-width:600px){
+    .quote-banner{padding:44px 0 40px;}
+    .quote-banner p{font-size:16.5px;}
+    .quote-body{padding-top:40px; padding-bottom:64px;}
+    .qf-row{grid-template-columns:1fr; gap:0;}
+    .qf-submit{width:100%;}
+    .how-card{padding:28px 22px;}
+    .qf-thanks{padding:32px 22px;}
+    .tab-quote-cta{padding:20px;}
+    .tab-quote-cta .btn{width:100%;}
+  }
+
+  /* ---------- DRAFT: links to new pages ---------- */
+  nav.links{gap:28px;}
+  @media(max-width:1100px) and (min-width:861px){ nav.links{gap:18px;} nav.links a.navlink{font-size:14px;} .nav-right{gap:14px;} .phone-link{display:none;} }
+  .claims-actions{display:flex; gap:14px; flex-wrap:wrap;}
+  .claims .btn.ghost:not(:hover){background:transparent; border-color:var(--paper); color:var(--paper);}
+  .claims .btn.ghost:hover{background:var(--paper); color:var(--deep-2);}
+  .how-more{border-top:1px solid var(--gold); padding:22px 0 24px;}
+  .how-more h4{font-family:'Playfair Display', Georgia, serif; font-size:19px; color:var(--deep-2); margin:0 0 6px; line-height:1.2;}
+  .how-more p{margin:0 0 10px; font-size:15px; color:#4B5F52;}
+  .how-more a{font-weight:600; color:var(--brand-dark); text-decoration:underline;}
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{transition:none !important; animation:none !important;}
+  }
+
+  /* ---------- INNER PAGES (claim / detailed quote) ---------- */
+  nav.links a.navlink[aria-current="page"]{color:var(--brand-dark); box-shadow:inset 0 -2px 0 var(--gold); padding-bottom:3px;}
+  .quote-banner h1{font-size:clamp(36px,5vw,58px); color:var(--paper); max-width:20ch;}
+  .cf{min-width:0;}
+  .cf [hidden], main [hidden]{display:none !important;}
+  .cf .alert{border:1px solid var(--gold); border-left-width:5px; background:#FBF3E2; padding:16px 18px; margin:0 0 22px; font-size:15.5px; color:var(--deep-2); border-radius:4px;}
+  .cf .alert b{display:block; font-family:'Playfair Display', Georgia, serif; font-size:18px; margin-bottom:4px;}
+  .cf .lede{color:#3E5347; font-size:16.5px; margin:0 0 24px; max-width:62ch;}
+  .cf fieldset{border:0; margin:0; padding:0; min-width:0;}
+  .cf .sec{background:#FFFDF8; border:1px solid var(--line); border-top:3px solid var(--brand); border-radius:4px; padding:24px clamp(18px,3vw,30px) 26px; margin-bottom:18px;}
+  .cf .sec[id^="s_"]{border-top-color:var(--gold); background:#FDF9EF;}
+  .cf .sec legend{display:contents;}
+  .cf .sec h2{display:flex; gap:12px; align-items:baseline; font-size:23px; color:var(--deep-2); margin:0 0 6px; line-height:1.2;}
+  .cf .sec h2 .n{font-family:'Source Serif 4', Georgia, serif; font-size:13px; font-weight:600; color:var(--gold); letter-spacing:0.08em; font-variant-numeric:tabular-nums;}
+  .cf .hint{color:#56685C; font-size:14.5px; margin:0 0 16px;}
+  .cf .hint a{color:var(--brand-dark); text-decoration:underline; font-weight:600;}
+  .cf .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:16px 18px; margin-top:12px;}
+  .cf .full{grid-column:1/-1;}
+  .cf .f{display:flex; flex-direction:column; gap:6px; min-width:0;}
+  .cf .f label{font-size:14.5px; font-weight:600; color:var(--deep-2); line-height:1.3;}
+  .cf .f label .opt{font-weight:400; color:#6B7B70;}
+  .cf input[type=text],.cf input[type=email],.cf input[type=tel],.cf input[type=date],.cf input[type=time],.cf input[type=number],.cf select,.cf textarea{
+    font-family:'Source Serif 4', Georgia, serif; font-size:16px; color:var(--ink); background:#ECEAE3; border:0; border-radius:4px;
+    padding:12px 14px; width:100%; min-width:0; min-height:48px; box-shadow:inset 0 -2px 0 transparent; transition:box-shadow .18s ease, background .18s ease;}
+  .cf select{-webkit-appearance:none; appearance:none; padding-right:40px; cursor:pointer;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%231F3B2C' stroke-width='2'/%3E%3C/svg%3E");
+    background-repeat:no-repeat; background-position:right 16px center;}
+  .cf textarea{min-height:96px; resize:vertical;}
+  .cf input:hover,.cf select:hover,.cf textarea:hover{background-color:#E6E3DA;}
+  .cf input:focus,.cf select:focus,.cf textarea:focus{outline:none; background-color:#E8E5DD; box-shadow:inset 0 -3px 0 var(--brand);}
+  .cf .f.err input,.cf .f.err select,.cf .f.err textarea{box-shadow:inset 0 -3px 0 #9B2C2C; background-color:#F3E6E2;}
+  .cf .errmsg{color:#9B2C2C; font-size:13.5px;}
+  .cf .cov-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:12px; margin-top:12px;}
+  .cf .cov{position:relative; display:block; border:1px solid var(--line); border-radius:4px; padding:14px 16px 14px 46px; background:#F4F2EC; cursor:pointer; transition:border-color .15s, background .15s;}
+  .cf .cov:hover{border-color:var(--brand);}
+  .cf .cov input{position:absolute; left:16px; top:18px; width:18px; height:18px; accent-color:var(--brand-dark); margin:0;}
+  .cf .cov b{display:block; font-weight:600; color:var(--deep-2); font-size:16px;}
+  .cf .cov small{color:#56685C; font-size:13.5px; line-height:1.4; display:block; margin-top:2px;}
+  .cf .cov:has(input:checked){border-color:var(--brand-dark); background:#EAF3E6; box-shadow:inset 0 0 0 1px var(--brand-dark);}
+  .cf .check{display:flex; gap:12px; align-items:flex-start; font-size:14.5px; color:#3E5347;}
+  .cf .check input{margin-top:4px; accent-color:var(--brand-dark); width:18px; height:18px; flex:none;}
+  .cf .submit-row{display:flex; gap:18px; align-items:center; flex-wrap:wrap; margin-top:6px;}
+  .cf .submit-row .status{font-size:14.5px; color:#56685C;}
+  .cf .done{padding:40px; background:var(--panel); border-top:4px solid var(--brand); border-radius:4px;}
+  .cf .done h2{font-size:30px; color:var(--deep-2); margin:0 0 10px;}
+  .cf .done p{color:#3E5347; font-size:16.5px;}
+  .cf .done a{color:var(--brand-dark); text-decoration:underline; font-weight:600;}
+  .cf pre.summary{white-space:pre-wrap; word-break:break-word; background:#FFFDF8; border:1px solid var(--line); border-radius:4px; padding:16px; font:13.5px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace; max-height:420px; overflow:auto;}
+  .cf .row{display:flex; flex-wrap:wrap; gap:12px; margin-top:16px;}
+  .cf .copy-msg{font-size:14px; color:#56685C; margin:10px 0 0;}
+  .cf .qf-honey{position:absolute !important; left:-10000px !important; width:1px; height:1px; overflow:hidden;}
+  .how-card .how-more{border-top:1px solid var(--gold); padding:22px 0 24px;}
+  .how-card .how-more h4{font-family:'Playfair Display', Georgia, serif; font-size:19px; color:var(--deep-2); margin:0 0 6px; line-height:1.2;}
+  .how-card .how-more p{margin:0 0 10px; font-size:15px; color:#4B5F52;}
+  .how-card .how-more a{font-weight:600; color:var(--brand-dark); text-decoration:underline;}
+  .how-contact .fax{display:flex; align-items:center; gap:10px; font-weight:600; color:#3E5347; font-size:16px; padding:5px 0;}
+  .inner-aside{position:sticky; top:96px;}
+  @media(max-width:960px){ .inner-aside{position:static;} }
+  @media(max-width:600px){ .cf .done{padding:30px 20px;} .cf .submit-row .qf-submit{width:100%;} .cf .sec h2{font-size:21px;} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="/" class="logo">
+<img class="torch" src="/assets/torch.png" alt="" width="34" height="38">
+      <span>Best Champion Insurance</span>
+    </a>
+    <nav class="links" id="site-nav">
+      <a class="navlink" href="/#coverage">Coverage</a>
+      <a class="navlink" href="/#why">Agency</a>
+      <a class="navlink" href="/report-a-claim/">Report a Claim</a>
+      <a class="navlink" href="/quote-request/" aria-current="page">Detailed Quote</a>
+      <a class="navlink" href="/#contact">Contact</a>
+      <a class="navlink menu-only" href="tel:+12122336888">Call 212.233.6888</a>
+    </nav>
+    <div class="nav-right">
+      <a class="phone-link" href="tel:+12122336888">212.233.6888</a>
+      <a class="btn" href="/#quote">Get a Quote</a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section aria-labelledby="page-title">
+    <div class="quote-banner">
+      <div class="wrap">
+        <div class="kicker">Free &middot; No obligation</div>
+        <h1 id="page-title">Detailed Quote Request</h1>
+        <p>Tell us what you need covered. A licensed broker will shop several carriers and get back to you, usually within one to two business days.</p>
+      </div>
+    </div>
+    <div class="wrap quote-body">
+      <div class="quote-grid">
+        <div class="cf">
+<section id="formView">
+<p class="lede">Pick everything you’d like quoted and fill in what you know. Fields marked optional can be left blank.</p>
+<form id="qf" novalidate>
+    <fieldset class="sec" data-sec="contact">
+      <legend><h2><span class="n">01</span>Your contact information</h2></legend>
+      <p class="hint">How we should reach you about the quote.</p>
+      <div class="grid">
+        <div class="f"><label for="c_name">Full name</label><input type="text" id="c_name" name="Full name" autocomplete="name" required></div>
+        <div class="f"><label for="c_biz">Business name <span class="opt">(optional)</span></label><input type="text" id="c_biz" name="Business name" autocomplete="organization"></div>
+        <div class="f"><label for="c_phone">Phone</label><input type="tel" id="c_phone" name="Phone" autocomplete="tel" inputmode="tel"></div>
+        <div class="f"><label for="c_email">Email</label><input type="email" id="c_email" name="Email" autocomplete="email"></div>
+        <div class="f"><label for="c_lang">Preferred language</label>
+          <select id="c_lang" name="Preferred language"><option>English</option><option>中文 (Chinese, Mandarin)</option><option>廣東話 (Cantonese)</option><option>Español</option><option>Other</option></select></div>
+        <div class="f"><label for="c_best">Best way to reach you</label>
+          <select id="c_best" name="Best way to reach you"><option>Phone call</option><option>Text message</option><option>Email</option><option>WeChat</option></select></div>
+        <div class="f full" id="c_reach_err" hidden><span class="errmsg">Enter a phone number or an email address so we can reach you.</span></div>
+      </div>
+    </fieldset>
+
+    <fieldset class="sec" data-sec="coverage">
+      <legend><h2><span class="n">02</span>What do you want to insure?</h2></legend>
+      <p class="hint">Pick everything you'd like quoted. Each choice opens a short section below.</p>
+      <div class="cov-grid" id="covs">
+        <label class="cov"><input type="checkbox" name="Coverage" value="Commercial property & liability" data-show="s_cpl"><b>Commercial property &amp; liability</b><small>Buildings you own or rent out, stores, restaurants, offices</small></label>
+        <label class="cov"><input type="checkbox" name="Coverage" value="Homeowners / dwelling" data-show="s_home"><b>Homeowners / dwelling</b><small>Your home, 1–4 family, condo, co-op, rental house</small></label>
+        <label class="cov"><input type="checkbox" name="Coverage" value="Personal auto" data-show="s_auto"><b>Personal auto</b><small>Cars for you and your family</small></label>
+        <label class="cov"><input type="checkbox" name="Coverage" value="Workers comp & disability (DBL/PFL)" data-show="s_wc"><b>Workers comp &amp; disability</b><small>Required in NY once you have employees, including DBL &amp; PFL</small></label>
+        <label class="cov"><input type="checkbox" name="Coverage" value="Commercial auto" data-show="s_cauto"><b>Commercial auto</b><small>Vans, trucks and cars used for the business</small></label>
+        <label class="cov"><input type="checkbox" name="Coverage" value="Umbrella / other" data-show="s_other"><b>Umbrella &amp; other</b><small>Extra liability, liquor, contractors, bonds and more</small></label>
+      </div>
+      <p class="errmsg" id="cov_err" hidden>Choose at least one type of insurance.</p>
+    </fieldset>
+
+    <fieldset class="sec" id="s_cpl" hidden>
+      <legend><h2><span class="n">·</span>Commercial property &amp; liability</h2></legend>
+      <div class="grid">
+        <div class="f full"><label for="p_addr">Property / business address</label><input type="text" id="p_addr" name="CPL: Property address" data-req></div>
+        <div class="f full"><label for="p_ops">What happens at the location?</label><textarea id="p_ops" name="CPL: Operations" placeholder="e.g. 3-story building, ground-floor retail, 2 apartments upstairs"></textarea></div>
+        <div class="f"><label for="p_int">Your interest</label><select id="p_int" name="CPL: Interest"><option value="">Choose</option><option>Building owner, I rent it out</option><option>Building owner, I occupy part</option><option>Tenant / business owner</option></select></div>
+        <div class="f"><label for="p_con">Construction</label><select id="p_con" name="CPL: Construction"><option value="">Choose</option><option>Frame (wood)</option><option>Joisted masonry (brick)</option><option>Non-combustible</option><option>Fire resistive</option><option>Not sure</option></select></div>
+        <div class="f"><label for="p_yr">Year built</label><input type="number" id="p_yr" name="CPL: Year built" min="1800" max="2027" inputmode="numeric"></div>
+        <div class="f"><label for="p_st">Stories</label><input type="number" id="p_st" name="CPL: Stories" min="1" inputmode="numeric"></div>
+        <div class="f"><label for="p_sq">Total square feet</label><input type="number" id="p_sq" name="CPL: Square feet" min="0" inputmode="numeric"></div>
+        <div class="f"><label for="p_res">Apartments (units)</label><input type="number" id="p_res" name="CPL: Residential units" min="0" inputmode="numeric"></div>
+        <div class="f"><label for="p_com">Stores / commercial units</label><input type="number" id="p_com" name="CPL: Commercial units" min="0" inputmode="numeric"></div>
+        <div class="f"><label for="p_spr">Sprinklers</label><select id="p_spr" name="CPL: Sprinklered"><option value="">Choose</option><option>Yes, fully</option><option>Partially</option><option>No</option></select></div>
+        <div class="f"><label for="p_bv">Building value ($) <span class="opt">(if owner)</span></label><input type="number" id="p_bv" name="CPL: Building value $" min="0" inputmode="numeric"></div>
+        <div class="f"><label for="p_cv">Contents / equipment ($)</label><input type="number" id="p_cv" name="CPL: Contents value $" min="0" inputmode="numeric"></div>
+        <div class="f"><label for="p_rev">Annual sales or rents ($)</label><input type="number" id="p_rev" name="CPL: Annual revenue $" min="0" inputmode="numeric"></div>
+        <div class="f full"><label for="p_upd">Updates to roof, wiring, plumbing, heating <span class="opt">(years, if known)</span></label><input type="text" id="p_upd" name="CPL: Updates" placeholder="e.g. Roof 2018, wiring 2011"></div>
+      </div>
+    </fieldset>
+
+    <fieldset class="sec" id="s_home" hidden>
+      <legend><h2><span class="n">·</span>Homeowners / dwelling</h2></legend>
+      <div class="grid">
+        <div class="f full"><label for="h_addr">Home address</label><input type="text" id="h_addr" name="Home: Address" data-req></div>
+        <div class="f"><label for="h_type">Type of home</label><select id="h_type" name="Home: Type"><option value="">Choose</option><option>1 family</option><option>2 family</option><option>3–4 family</option><option>Condo</option><option>Co-op</option><option>Renter</option></select></div>
+        <div class="f"><label for="h_occ">Who lives there?</label><select id="h_occ" name="Home: Occupancy"><option value="">Choose</option><option>I live there</option><option>I live there and rent part</option><option>Fully rented to tenants</option><option>Vacant</option></select></div>
+        <div class="f"><label for="h_yr">Year built</label><input type="number" id="h_yr" name="Home: Year built" min="1800" max="2027" inputmode="numeric"></div>
+        <div class="f"><label for="h_sq">Square feet</label><input type="number" id="h_sq" name="Home: Square feet" min="0" inputmode="numeric"></div>
+        <div class="f"><label for="h_mort">Mortgage on the home?</label><select id="h_mort" name="Home: Mortgage"><option value="">Choose</option><option>Yes</option><option>No</option></select></div>
+        <div class="f"><label for="h_extra">Pool, trampoline, dog, home business? <span class="opt">(optional)</span></label><input type="text" id="h_extra" name="Home: Special items"></div>
+      </div>
+    </fieldset>
+
+    <fieldset class="sec" id="s_auto" hidden>
+      <legend><h2><span class="n">·</span>Personal auto</h2></legend>
+      <div class="grid">
+        <div class="f full"><label for="a_veh">Vehicles <span class="opt">(year, make, model)</span></label><textarea id="a_veh" name="Auto: Vehicles" placeholder="2021 Toyota Camry&#10;2018 Honda CR-V" data-req></textarea></div>
+        <div class="f full"><label for="a_drv">Drivers <span class="opt">(name, date of birth, years licensed)</span></label><textarea id="a_drv" name="Auto: Drivers"></textarea></div>
+        <div class="f"><label for="a_zip">ZIP code where cars are parked</label><input type="text" id="a_zip" name="Auto: Garaging ZIP" inputmode="numeric" maxlength="10"></div>
+        <div class="f"><label for="a_inc">Accidents or tickets, last 3 years</label><select id="a_inc" name="Auto: Accidents/tickets"><option value="">Choose</option><option>None</option><option>Yes (describe in notes)</option></select></div>
+      </div>
+    </fieldset>
+
+    <fieldset class="sec" id="s_wc" hidden>
+      <legend><h2><span class="n">·</span>Workers comp &amp; disability</h2></legend>
+      <div class="grid">
+        <div class="f full"><label for="w_ops">What does the business do?</label><input type="text" id="w_ops" name="WC: Business description" data-req></div>
+        <div class="f"><label for="w_ft">Full-time employees</label><input type="number" id="w_ft" name="WC: Full-time employees" min="0" inputmode="numeric"></div>
+        <div class="f"><label for="w_pt">Part-time employees</label><input type="number" id="w_pt" name="WC: Part-time employees" min="0" inputmode="numeric"></div>
+        <div class="f"><label for="w_pay">Total annual payroll ($)</label><input type="number" id="w_pay" name="WC: Annual payroll $" min="0" inputmode="numeric"></div>
+        <div class="f"><label for="w_need">Coverage needed</label><select id="w_need" name="WC: Needed"><option>Workers comp + DBL/PFL</option><option>Workers comp only</option><option>DBL/PFL only</option><option>Not sure</option></select></div>
+      </div>
+    </fieldset>
+
+    <fieldset class="sec" id="s_cauto" hidden>
+      <legend><h2><span class="n">·</span>Commercial auto</h2></legend>
+      <div class="grid">
+        <div class="f full"><label for="ca_veh">Vehicles <span class="opt">(year, make, model, use)</span></label><textarea id="ca_veh" name="Comm auto: Vehicles" data-req></textarea></div>
+        <div class="f"><label for="ca_drv">Number of drivers</label><input type="number" id="ca_drv" name="Comm auto: Drivers" min="0" inputmode="numeric"></div>
+        <div class="f"><label for="ca_rad">Farthest regular trip</label><select id="ca_rad" name="Comm auto: Radius"><option value="">Choose</option><option>Within 50 miles</option><option>50–200 miles</option><option>Over 200 miles</option></select></div>
+      </div>
+    </fieldset>
+
+    <fieldset class="sec" id="s_other" hidden>
+      <legend><h2><span class="n">·</span>Umbrella &amp; other</h2></legend>
+      <div class="grid">
+        <div class="f full"><label for="o_desc">What do you need?</label><textarea id="o_desc" name="Other: Request" placeholder="e.g. $2M umbrella over my building and auto, liquor liability for a restaurant" data-req></textarea></div>
+      </div>
+    </fieldset>
+
+    <fieldset class="sec" data-sec="current">
+      <legend><h2><span class="n">03</span>Current insurance &amp; timing</h2></legend>
+      <div class="grid">
+        <div class="f"><label for="i_now">Insured right now?</label><select id="i_now" name="Currently insured"><option value="">Choose</option><option>Yes</option><option>No, new purchase</option><option>No, policy lapsed</option></select></div>
+        <div class="f"><label for="i_car">Current company <span class="opt">(optional)</span></label><input type="text" id="i_car" name="Current carrier"></div>
+        <div class="f"><label for="i_exp">Current policy ends <span class="opt">(optional)</span></label><input type="date" id="i_exp" name="Current expiration"></div>
+        <div class="f"><label for="i_prem">Current yearly cost ($) <span class="opt">(optional)</span></label><input type="number" id="i_prem" name="Current premium $" min="0" inputmode="numeric"></div>
+        <div class="f"><label for="i_eff">Coverage needed by</label><input type="date" id="i_eff" name="Desired effective date"></div>
+        <div class="f"><label for="i_clm">Claims in the last 5 years</label><select id="i_clm" name="Claims last 5 years"><option value="">Choose</option><option>None</option><option>Yes (describe below)</option></select></div>
+        <div class="f full"><label for="i_notes">Anything else we should know? <span class="opt">(optional)</span></label><textarea id="i_notes" name="Notes"></textarea></div>
+        <div class="full"><label class="check"><input type="checkbox" id="consent" required><span>I agree that Best Champion Insurance Brokerage may contact me about this request and share these details with insurance companies to get quotes. Requesting a quote does not start coverage.</span></label>
+        <p class="errmsg" id="consent_err" hidden>Please check this box so we can request quotes for you.</p></div>
+      </div>
+    </fieldset>
+      <div class="qf-honey" aria-hidden="true"><label for="q-honey">Leave this field empty</label><input type="text" id="q-honey" name="_honey" tabindex="-1" autocomplete="off"></div>
+    <div class="submit-row">
+      <button type="submit" class="qf-submit" id="submitBtn">Send quote request</button>
+      <span class="status" id="status" aria-live="polite">Takes about 5 minutes.</span>
+    </div>
+  </form>
+</section>
+<section id="doneView" hidden>
+  <div class="done" tabindex="-1">
+    <h2 id="doneTitle"></h2>
+    <p id="doneText"></p>
+    <pre class="summary" id="summary"></pre>
+    <div class="row">
+      <button type="button" class="btn" id="copyBtn">Copy my answers</button>
+      <button type="button" class="btn ghost" id="againBtn">Start a new request</button>
+    </div>
+    <p class="copy-msg" id="copyMsg" aria-live="polite"></p>
+  </div>
+</section>
+        </div>
+        <aside class="how-card inner-aside" aria-labelledby="how-title">
+          <h3 id="how-title">How It Works</h3>
+          <ol class="how-steps">
+            <li>Tell us what you want insured.</li>
+            <li>A licensed broker shops several carriers for you.</li>
+            <li>We go over your options, usually within one to two business days.</li>
+          </ol>
+          <div class="how-more">
+            <h4>Just need a quick quote?</h4>
+            <p>For a single personal policy, the short form on our home page takes about a minute.</p>
+            <a href="/#quote">Use the quick quote form &rarr;</a>
+          </div>
+          <div class="how-contact">
+            <h4>Contact Us</h4>
+            <p>Prefer to talk? Reach a broker directly.</p>
+            <a href="tel:+12122336888"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>212.233.6888</a>
+            <a href="mailto:info@bestchampioninsurance.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>info@bestchampioninsurance.com</a>
+            <span class="fax"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V2h12v7"/><rect x="2" y="9" width="20" height="9" rx="2"/><path d="M6 14h12v8H6z"/></svg>Fax 646.218.8762</span>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="/" class="logo">
+<img class="torch" src="/assets/torch.png" alt="" width="34" height="38">
+          <span>Best Champion Insurance</span>
+        </a>
+        <p>Independent insurance brokerage serving New York, New Jersey, Connecticut, and Pennsylvania since 1998.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Coverage</h5>
+        <ul>
+          <li><a href="/#coverage">Personal</a></li>
+          <li><a href="/#coverage">Business</a></li>
+          <li><a href="/#quote">Get a Quote</a></li>
+          <li><a href="/quote-request/">Detailed Quote Request</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Agency</h5>
+        <ul>
+          <li><a href="/#why">About Us</a></li>
+          <li><a href="/#claims">Claims</a></li>
+          <li><a href="/report-a-claim/">Report a Claim</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Reach us</h5>
+        <ul>
+          <li><a href="tel:+12122336888">212.233.6888</a></li>
+          <li><a href="mailto:info@bestchampioninsurance.com">info@bestchampioninsurance.com</a></li>
+          <li><span>11 East Broadway</span></li>
+          <li><span>New York, NY 10038</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Best Champion Insurance Brokerage. All rights reserved.</span>
+      <span>Licensed independent insurance broker &middot; NY &middot; NJ &middot; CT &middot; PA</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var header=document.querySelector('header'), toggle=document.querySelector('.menu-toggle');
+  if(!toggle) return;
+  function setMenu(open){ header.classList.toggle('open',open); toggle.setAttribute('aria-expanded',open?'true':'false'); toggle.setAttribute('aria-label',open?'Close menu':'Open menu'); }
+  toggle.addEventListener('click',function(){ setMenu(!header.classList.contains('open')); });
+  document.querySelectorAll('nav.links a').forEach(function(a){ a.addEventListener('click',function(){ setMenu(false); }); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') setMenu(false); });
+})();
+(function(){
+  var ENDPOINT='https://formsubmit.co/ajax/info@bestchampioninsurance.com';
+  var $=function(s){return document.querySelector(s);};
+  var form=$('#qf'); if(!form) return;
+  var MULTI=true, KIND='Detailed quote request', NEED='Needed for this quote.';
+  function syncSections(){ document.querySelectorAll('#covs input').forEach(function(i){ document.getElementById(i.dataset.show).hidden=!i.checked; }); }
+  form.addEventListener('change',function(e){ if(e.target.closest('#covs')){ syncSections(); $('#cov_err').hidden=true; } });
+  function clearErr(){ document.querySelectorAll('.f.err').forEach(function(f){f.classList.remove('err');}); document.querySelectorAll('.errmsg.field').forEach(function(m){m.remove();}); }
+  function markErr(input,msg){ var f=input.closest('.f'); f.classList.add('err'); var m=document.createElement('span'); m.className='errmsg field'; m.textContent=msg; f.appendChild(m); input.setAttribute('aria-invalid','true'); }
+  function today(){ var d=new Date(); return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); }
+  function validate(){
+    clearErr(); var first=null;
+    function need(el,msg){ if(!el.value.trim()){ markErr(el,msg); first=first||el; } }
+    need($('#c_name'),'Enter your name.');
+    var ph=$('#c_phone').value.trim(), em=$('#c_email').value.trim();
+    $('#c_reach_err').hidden=!!(ph||em); if(!(ph||em)) first=first||$('#c_phone');
+    if(em && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)){ markErr($('#c_email'),'Check the email address.'); first=first||$('#c_email'); }
+    var any=document.querySelector('#covs input:checked'); $('#cov_err').hidden=!!any; if(!any) first=first||document.querySelector('#covs input');
+    if(!MULTI){
+      need($('#l_date'),'Enter the date, or your best guess.');
+      var d=$('#l_date').value; if(d && d>today()){ markErr($('#l_date'),'The date can\u2019t be in the future.'); first=first||$('#l_date'); }
+      need($('#l_addr'),'Enter where it happened.');
+      need($('#l_desc'),'Tell us briefly what happened.');
+    }
+    document.querySelectorAll('fieldset[id^="s_"]:not([hidden]) [data-req]').forEach(function(i){ need(i,NEED); });
+    var c=$('#consent'); $('#consent_err').hidden=c.checked; if(!c.checked) first=first||c;
+    if(first){ first.focus({preventScroll:true}); first.scrollIntoView({block:'center',behavior:'smooth'}); }
+    return !first;
+  }
+  function collect(){
+    var out=[];
+    document.querySelectorAll('#qf fieldset.sec').forEach(function(fs){
+      if(fs.hidden) return;
+      var title=fs.querySelector('h2').textContent.replace(/^[\d\u00b7]+/,'').trim(), rows=[];
+      if(fs.querySelector('#covs')){
+        var v=[].map.call(fs.querySelectorAll('#covs input:checked'),function(i){return i.value;});
+        rows.push([MULTI?'Coverage requested':'Claim type', v.join(', ')]);
+      } else {
+        fs.querySelectorAll('input,select,textarea').forEach(function(el){
+          if(el.type==='checkbox'||el.name==='_honey') return;
+          var v=(el.value||'').trim(); if(!v) return;
+          var lab=fs.querySelector('label[for="'+el.id+'"]');
+          rows.push([lab?lab.childNodes[0].textContent.trim():el.name, v]);
+        });
+      }
+      if(rows.length) out.push([title,rows,/^s_/.test(fs.id)]);
+    });
+    return out;
+  }
+  function toText(sections,when){
+    var s=KIND.toUpperCase()+' \u2014 Best Champion Insurance Brokerage\nSubmitted: '+when+'\n';
+    sections.forEach(function(sec){ s+='\n'+sec[0].toUpperCase()+'\n'; sec[1].forEach(function(r){ s+='  '+r[0]+': '+r[1].replace(/\n/g,'\n    ')+'\n'; }); });
+    return s;
+  }
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!validate()){ $('#status').textContent='A few answers are missing. They are marked in red.'; return; }
+    var btn=$('#submitBtn'), label=btn.textContent; btn.disabled=true; btn.textContent='Sending\u2026'; $('#status').textContent='Sending\u2026';
+    var whenStr=new Date().toLocaleString('en-US',{dateStyle:'medium',timeStyle:'short'});
+    var sections=collect(), text=toText(sections,whenStr);
+    var name=$('#c_name').value.trim(), em=$('#c_email').value.trim();
+    var payload={'Form':KIND};
+    sections.forEach(function(sec){ sec[1].forEach(function(r){ if(r[0]==='Email') return; var k=sec[2]?sec[0]+': '+r[0]:r[0]; if(payload[k]!==undefined) k=k+' ('+sec[0]+')'; payload[k]=r[1]; }); });
+    if(em){ payload.email=em; payload._replyto=em; }
+    payload._subject='New '+KIND.toLowerCase()+' - '+name;
+    payload._template='table'; payload._captcha='false'; payload._honey=form.elements['_honey'].value;
+    if(/^https?:/.test(location.protocol)) payload._url=location.origin+location.pathname;
+    fetch(ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload)})
+      .then(function(r){ return r.json().catch(function(){ return {success:r.ok?'true':'false'}; }); })
+      .then(function(d){ var ok=String(d&&d.success)==='true' || /activat/i.test(String(d&&d.message||'')); form.setAttribute('data-last-result',ok?'success':'error'); showDone(ok,text); })
+      .catch(function(){ form.setAttribute('data-last-result','error'); showDone(false,text); })
+      .then(function(){ btn.disabled=false; btn.textContent=label; $('#status').textContent='Takes about 5 minutes.'; });
+  });
+  function showDone(ok,text){
+    $('#formView').hidden=true; $('#doneView').hidden=false; $('#summary').textContent=text;
+    $('#doneTitle').textContent=ok?'Request sent':'One more step';
+    $('#doneText').innerHTML=ok?'Thank you. A broker at Best Champion will review your request and contact you, usually within one to two business days. A copy of your answers is below.':'This page could not send your answers automatically. Copy them with the button below and email them to <a href="mailto:info@bestchampioninsurance.com">info@bestchampioninsurance.com</a> or fax them to 646.218.8762, or call <a href="tel:+12122336888">212.233.6888</a> and we will take your request by phone.';
+    $('#doneView').scrollIntoView({block:'start',behavior:'smooth'});
+  }
+  $('#copyBtn').addEventListener('click',function(){
+    var t=$('#summary').textContent;
+    function sel(){ var r=document.createRange(); r.selectNodeContents($('#summary')); var s=getSelection(); s.removeAllRanges(); s.addRange(r); $('#copyMsg').textContent='Text selected. Press Ctrl+C or \u2318C to copy.'; }
+    if(navigator.clipboard){ navigator.clipboard.writeText(t).then(function(){ $('#copyMsg').textContent='Copied.'; },sel); } else sel();
+  });
+  $('#againBtn').addEventListener('click',function(){
+    form.reset(); syncSections(); clearErr(); form.removeAttribute('data-last-result');
+    $('#doneView').hidden=true; $('#formView').hidden=false; $('#copyMsg').textContent=''; scrollTo({top:0});
+  });
+})();
+</script>
+</body>
+</html>
