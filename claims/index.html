@@ -752,7 +752,7 @@
 
     <fieldset class="sec">
       <legend><h2><span class="n">05</span>Photos and documents</h2></legend>
-      <p class="hint" style="margin-bottom:0">After you send this form, email photos of the damage, repair estimates, receipts and any police report or letters to <a href="mailto:info@bestchampioninsurance.com">info@bestchampioninsurance.com</a>, or fax them to 646.218.8762. Photos taken before cleanup help the claim the most.</p>
+      <p class="hint" style="margin-bottom:0">After you send this form, email photos of the damage, repair estimates, receipts and any police report or letters to <a href="mailto:claims@bestchampioninsurance.com">claims@bestchampioninsurance.com</a>, or fax them to 646.218.8762. Photos taken before cleanup help the claim the most.</p>
       <div class="grid" style="margin-top:14px">
         <div class="full"><label class="check"><input type="checkbox" id="consent" required><span>I confirm this information is true to the best of my knowledge, and I agree that Best Champion Insurance Brokerage may report this claim to the insurance company on my behalf. Sending this form does not guarantee the claim will be covered.</span></label>
         <p class="errmsg" id="consent_err" hidden>Please check this box so we can report the claim.</p></div>
@@ -928,7 +928,7 @@
   function showDone(ok,text){
     $('#formView').hidden=true; $('#doneView').hidden=false; $('#summary').textContent=text;
     $('#doneTitle').textContent=ok?'Claim sent to Best Champion':'One more step';
-    $('#doneText').innerHTML=ok?'Thank you. We will report this to your insurance company and call you, usually within one business day. Next, email your photos and documents to <a href="mailto:info@bestchampioninsurance.com">info@bestchampioninsurance.com</a> or fax them to 646.218.8762. A copy of your answers is below.':'This page could not send your claim automatically. Copy your answers with the button below and email them to <a href="mailto:info@bestchampioninsurance.com">info@bestchampioninsurance.com</a> or fax them to 646.218.8762, or call <a href="tel:+12122336888">212.233.6888</a> and we will take the claim by phone.';
+    $('#doneText').innerHTML=ok?'Thank you. We will report this to your insurance company and call you, usually within one business day. Next, email your photos and documents to <a href="mailto:claims@bestchampioninsurance.com">claims@bestchampioninsurance.com</a> or fax them to 646.218.8762. A copy of your answers is below.':'This page could not send your claim automatically. Copy your answers with the button below and email them to <a href="mailto:claims@bestchampioninsurance.com">claims@bestchampioninsurance.com</a> or fax them to 646.218.8762, or call <a href="tel:+12122336888">212.233.6888</a> and we will take the claim by phone.';
     $('#doneView').scrollIntoView({block:'start',behavior:'smooth'});
   }
   $('#copyBtn').addEventListener('click',function(){
