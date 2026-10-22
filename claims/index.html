@@ -919,11 +919,13 @@
     payload._subject='New '+KIND.toLowerCase()+' - '+name;
     payload._template='table'; payload._captcha='false'; payload._honey=form.elements['_honey'].value;
     if(/^https?:/.test(location.protocol)) payload._url=location.origin+location.pathname;
-    fetch(ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload)})
-      .then(function(r){ return r.json().catch(function(){ return {success:r.ok?'true':'false'}; }); })
-      .then(function(d){ var ok=String(d&&d.success)==='true' || /activat/i.test(String(d&&d.message||'')); form.setAttribute('data-last-result',ok?'success':'error'); showDone(ok,text); })
-      .catch(function(){ form.setAttribute('data-last-result','error'); showDone(false,text); })
-      .then(function(){ btn.disabled=false; btn.textContent=label; $('#status').textContent='Takes about 5 minutes.'; });
+    // Success ONLY on HTTP 2xx with success true/"true". Anything else (success "false" incl. 'needs Activation', non-2xx, network error, 20s timeout, bad JSON) shows the fallback.
+    var settled=false, ctl=window.AbortController?new AbortController():null;
+    function finish(ok){ if(settled) return; settled=true; clearTimeout(tmr); form.setAttribute('data-last-result',ok?'success':'error'); showDone(ok,text); btn.disabled=false; btn.textContent=label; $('#status').textContent='Takes about 5 minutes.'; }
+    var tmr=setTimeout(function(){ if(ctl) ctl.abort(); finish(false); },20000);
+    fetch(ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload),signal:ctl?ctl.signal:undefined})
+      .then(function(r){ return r.json().then(function(d){ return !!(r.ok && d && (d.success===true || d.success==='true')); },function(){ return false; }); })
+      .then(function(ok){ finish(ok); },function(){ finish(false); });
   });
   function showDone(ok,text){
     $('#formView').hidden=true; $('#doneView').hidden=false; $('#summary').textContent=text;
